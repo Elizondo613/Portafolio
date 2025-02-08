@@ -65,7 +65,7 @@ const Portafolio = () => {
     <section id="portfolio" className="portfolio-section">
       <div className="container">
         <h2 className="section-title">Mis Proyectos</h2>
-        <p className='text-port'>Acá encontrarás mis proyectos realizados, de hecho ¡esta misma página es uno de ellos!</p>
+        <p className='about-text'>Acá encontrarás mis proyectos realizados, de hecho ¡esta misma página es uno de ellos!</p>
         <div className="carousel-container">
           <div className="project-carousel">
             <div className="project-card active">
