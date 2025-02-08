@@ -1,0 +1,73 @@
+.contact-section {
+    background-color: var(--surface);
+    padding: 8rem 0;
+  }
+  
+  .contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: var(--text);
+    font-size: 1rem;
+    transition: var(--transition-smooth);
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .contact-content {
+      padding: 0 1rem;
+    }
+  }
+
+//Form
+  .btn.submitting {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+
+  .Toastify__toast {
+    background: var(--surface);
+    color: var(--text);
+  }
+  
+  .Toastify__toast--success {
+    border-left: 4px solid #4caf50;
+  }
+  
+  .Toastify__toast--error {
+    border-left: 4px solid #f44336;
+  }

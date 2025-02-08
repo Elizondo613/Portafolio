@@ -1,0 +1,179 @@
+.portfolio-section {
+  background-color: var(--background);
+  padding: 8rem 0;
+}
+
+.carousel-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.project-carousel {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: var(--surface);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: var(--transition-smooth);
+  opacity: 0;
+  transform: translateY(20px);
+  position: absolute;
+  width: 100%;
+}
+
+.project-card.active {
+  opacity: 1;
+  transform: translateY(0);
+  position: relative;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.project-image-carousel {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.project-image-carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  pointer-events: none;
+}
+
+.carousel-button {
+  background: var(--surface);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: var(--transition-smooth);
+  pointer-events: auto;
+}
+
+.carousel-button:hover {
+  opacity: 1;
+  background: var(--accent);
+}
+
+.carousel-button svg {
+  width: 24px;
+  height: 24px;
+  color: var(--text);
+}
+
+.image-indicators {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+}
+
+.image-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--text);
+  opacity: 0.5;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.image-indicator.active {
+  opacity: 1;
+  background: var(--accent);
+}
+
+.project-info {
+  padding: 1.5rem;
+}
+
+.project-info h3 {
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.project-info p {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.project-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.project-tag {
+  background: rgba(74, 58, 255, 0.1);
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  color: var(--accent);
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.carousel-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--text);
+  opacity: 0.5;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.carousel-indicator.active {
+  opacity: 1;
+  background: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .carousel-container {
+    padding: 1rem;
+  }
+
+  .project-image-carousel {
+    height: 300px;
+  }
+}
+
+.text-port {
+  margin: auto;
+  text-align: center;
+}

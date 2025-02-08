@@ -1,0 +1,114 @@
+:root {
+    --primary: #2A2356;
+    --secondary: #4A3AFF;
+    --accent: #7B6EF6;
+    --background: #0F0F1A;
+    --surface: #1A1A2E;
+    --text: #FFFFFF;
+    --text-secondary: #B4B4C7;
+    --gradient-primary: linear-gradient(135deg, #4A3AFF, #7B6EF6);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  
+  /* Animaciones globales */
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Clases de utilidad */
+  .section {
+    min-height: 100vh;
+    padding: 6rem 2rem;
+    position: relative;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .app-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    flex: 1;
+    width: 100%;
+  }
+
+  .btn {
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: var(--transition-smooth);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .btn-primary {
+    background: var(--gradient-primary);
+    color: var(--text);
+    box-shadow: 0 4px 15px rgba(74, 58, 255, 0.2);
+  }
+  
+  .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(74, 58, 255, 0.3);
+  }
+  
+  .btn-primary:active {
+    transform: translateY(-1px);
+  }
+  
+  .btn-secondary {
+    background: transparent;
+    border: 2px solid var(--accent);
+    color: var(--text);
+  }
+  
+  .btn-secondary:hover {
+    background: rgba(74, 58, 255, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(74, 58, 255, 0.1);
+  }

@@ -1,0 +1,55 @@
+.about-section {
+    background-color: var(--surface);
+    padding: 8rem 0;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .about-content {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about-text {
+    max-width: 600px;
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+  }
+  
+  .skills {
+    margin-top: 2rem;
+  }
+  
+  .skills h3 {
+    color: var(--text);
+    margin-bottom: 1rem;
+  }
+  
+  .skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .skill-tag {
+    background: rgba(74, 58, 255, 0.1);
+    border: 1px solid var(--accent);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: var(--transition-smooth);
+  }
+  
+  .skill-tag:hover {
+    background: var(--gradient-primary);
+    transform: translateY(-2px);
+  }
