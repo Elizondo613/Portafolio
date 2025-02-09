@@ -59,6 +59,27 @@
     cursor: not-allowed;
   }
 
+  .btn.submitting::after {
+    content: '...'; /* Agrega puntos suspensivos para indicar actividad */
+    margin-left: 0.5rem;
+    animation: dots 1s infinite;
+}
+
+@keyframes dots {
+    0%, 20% {
+        content: '';
+    }
+    40% {
+        content: '.';
+    }
+    60% {
+        content: '..';
+    }
+    80%, 100% {
+        content: '...';
+    }
+}
+
   .Toastify__toast {
     background: var(--surface);
     color: var(--text);

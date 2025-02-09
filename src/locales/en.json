@@ -1,0 +1,57 @@
+{
+    "home": {
+        "greeting": "Welcome! My name is",
+        "profession": "Web developer specialized in landing pages and full-stack projects.",
+        "buttons": {
+            "projects": "See projects",
+            "contact": "Contact"
+        }
+    },
+    "Navbar": {
+        "links": {
+            "start": "Home",
+            "about": "About me",
+            "portfolio": "Portfolio",
+            "contact": "Contact"
+        }
+    },
+    "LanguageSwitcher": {
+        "language": "Language"
+    },
+    "Footer": {
+        "slogan": "Developing exceptional web experiences",
+        "links": {
+            "start": "Home",
+            "about": "About me",
+            "portfolio": "Portfolio",
+            "contact": "Contact"
+        },
+        "follow": "Follow me on:",
+        "copy": "All rights reserved."
+    },
+    "About": {
+        "about": "About me",
+        "description": "I'm a web developer passionate about creating impactful digital experiences. I specialize in React, HTML, Tailwind CSS and JavaScript, building everything from landing pages to complex full-stack web applications (MERN).",
+        "technology": "Technologies"
+    },
+    "Contact": {
+        "contact": "Contact",
+        "name": "Name",
+        "message": "Message",
+        "send": "Send message",
+        "pleaseName": "Please enter your name",
+        "pleaseEmail": "Please enter a valid email address",
+        "pleaseMessage": "Please enter a message.",
+        "success": "Message sent successfully!",
+        "error": "Error sending message. Please try again."
+    },
+    "Portafolio": {
+        "project": "My Projects",
+        "text": "Here you will find my completed projects, in fact this very page is one of them!   ",
+        "descriptions": {
+            "description1": "Landing page for Pyro Communications",
+            "description2": "Interactive multiplayer game for the board game Casa de Leyendas",
+            "description3": "Lottery roulette game Las Leyendas"
+        }
+    }
+}

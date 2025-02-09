@@ -1,0 +1,57 @@
+{
+    "home": {
+        "greeting": "¡Bienvenido! Mi nombre es",
+        "profession": "Desarrollador web especializado en landing pages y proyectos full-stack.",
+        "buttons": {
+            "projects": "Ver Proyectos",
+            "contact": "Contactar"
+        }
+    },
+    "Navbar": {
+        "links": {
+            "start": "Inicio",
+            "about": "Sobre mí",
+            "portfolio": "Portafolio",
+            "contact": "Contacto"
+        }
+    },
+    "LanguageSwitcher": {
+        "language": "Idioma"
+    },
+    "Footer": {
+        "slogan": "Desarrollando experiencias web excepcionales",
+        "links": {
+            "start": "Inicio",
+            "about": "Sobre mí",
+            "portfolio": "Portafolio",
+            "contact": "Contacto"
+        },
+        "follow": "Sígueme en:",
+        "copy": "Todos los derechos reservados."
+    },
+    "About": {
+        "about": "Sobre mí",
+        "description": "Soy un desarrollador web apasionado por crear experiencias digitales impactantes. Me especializo en React, HTML, Tailwind CSS y JavaScript, construyendo desde landing pages hasta aplicaciones web complejas full-stack (MERN).",
+        "technology": "Tecnologías"
+    },
+    "Contact": {
+        "contact": "Contacto",
+        "name": "Nombre",
+        "message": "Mensaje",
+        "send": "Enviar mensaje",
+        "pleaseName": "Por favor ingresa tu nombre",
+        "pleaseEmail": "Por favor ingresa un email válido",
+        "pleaseMessage": "Por favor ingresa un mensaje",
+        "success": "¡Mensaje enviado con éxito!",
+        "error": "Error al enviar el mensaje. Por favor intenta nuevamente."
+    },
+    "Portafolio": {
+        "project": "Mis Proyectos",
+        "text": "Acá encontrarás mis proyectos realizados, de hecho ¡esta misma página es uno de ellos!",
+        "descriptions": {
+            "description1": "Landing page para Pyro Communications",
+            "description2": "Juego interactivo multijugador para el juego de mesa Casa de Leyendas",
+            "description3": "Juego de ruleta Lotería Las Leyendas"
+        }
+    }
+}

@@ -33,8 +33,9 @@
   
   .nav-links {
     display: flex;
-    gap: 4rem;
+    gap: 2rem;
     list-style: none;
+    margin-left: auto;
   }
   
   .nav-links a {
@@ -76,3 +77,14 @@
     border: 2px solid #fff; /* Borde blanco */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
   }
+
+  // Button visible en movil
+  @media (max-width: 768px) {
+    .language-switcher {
+      display: block; /* Muestra el botón de cambio de idioma */
+      position: absolute;
+      right: 2rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+}

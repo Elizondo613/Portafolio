@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import '../styles/Footer.css';
-import Logo from '../assets/LogoVhalakar.jpg'
+import Logo from '../assets/LogoVhalakar.jpg';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
     const [showScrollTop, setShowScrollTop] = useState(false);
+    const { t } = useTranslation();
   
     useEffect(() => {
       const handleScroll = () => {
@@ -29,16 +31,16 @@ const Footer = () => {
             <a href="#home" className="logo-link">
                 <img src={Logo} alt="Logo portafolio" className="logo-image-footer" />
             </a>
-              <p>Desarrollando experiencias web excepcionales</p>
+              <p>{t('Footer.slogan')}</p>
             </div>
             <div className="footer-links">
-              <a href="#home">Inicio</a>
-              <a href="#about">Sobre mí</a>
-              <a href="#portfolio">Portafolio</a>
-              <a href="#contact">Contacto</a>
+              <a href="#home">{t('Footer.links.start')}</a>
+              <a href="#about">{t('Footer.links.about')}</a>
+              <a href="#portfolio">{t('Footer.links.portfolio')}</a>
+              <a href="#contact">{t('Footer.links.contact')}</a>
             </div>
             <div className="footer-social">
-              <p>Sígueme en:</p>
+              <p>{t('Footer.follow')}</p>
               <div className="social-links">
                 <a href="https://github.com/Elizondo613" target="_blank" rel="noopener noreferrer">
                   <i className="fab fa-github"></i>
@@ -53,7 +55,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="footer-bottom">
-            <p>&copy; 2025 Elizondo. Todos los derechos reservados.</p>
+            <p>&copy; 2025 Elizondo. {t('Footer.copy')}</p>
           </div>
         </footer>
   

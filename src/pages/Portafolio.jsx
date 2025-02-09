@@ -2,10 +2,12 @@ import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import '../styles/Portafolio.css';
 import img1 from '../assets/Pyro.png';
+import { useTranslation } from 'react-i18next';
 
 const Portafolio = () => {
   const [currentProject, setCurrentProject] = useState(0);
   const [currentImage, setCurrentImage] = useState(0);
+  const { t } = useTranslation();
 
   // Función para generar estrellas dinámicamente
   const generateStars = () => {
@@ -44,7 +46,7 @@ const Portafolio = () => {
   const projects = [
     {
       title: 'Pyrobpo',
-      description: 'Landing page para Pyro Communications',
+      description: t('Portafolio.descriptions.description1'),
       images: [
         img1,
         'https://via.placeholder.com/800x600',
@@ -54,7 +56,7 @@ const Portafolio = () => {
     },
     {
       title: 'Casa de leyendas',
-      description: 'Juego interactivo multijugador para el juego de mesa Casa de Leyendas',
+      description: t('Portafolio.descriptions.description2'),
       images: [
         'https://via.placeholder.com/800x600',
         'https://via.placeholder.com/800x600',
@@ -63,7 +65,7 @@ const Portafolio = () => {
     },
     {
       title: 'Lotería',
-      description: 'Juego de tombola Lotería Las Leyendas',
+      description: t('Portafolio.descriptions.description3'),
       images: [
         'https://via.placeholder.com/800x600',
         'https://via.placeholder.com/800x600',
@@ -72,15 +74,20 @@ const Portafolio = () => {
     },
   ];
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentProject((prev) =>
-        prev === projects.length - 1 ? 0 : prev + 1
-      );
-      setCurrentImage(0);
-    }, 5000);
-    return () => clearInterval(timer);
-  }, [projects.length]);
+  // Funciones para navegar entre proyectos
+  const nextProject = () => {
+    setCurrentProject((prev) => 
+      prev === projects.length - 1 ? 0 : prev + 1
+    );
+    setCurrentImage(0);
+  };
+  
+  const prevProject = () => {
+    setCurrentProject((prev) => 
+      prev === 0 ? projects.length - 1 : prev - 1
+    );
+    setCurrentImage(0);
+  };
 
   const nextImage = () => {
     setCurrentImage((prev) =>
@@ -96,14 +103,11 @@ const Portafolio = () => {
 
   return (
     <section id="portfolio" className="portfolio-section">
-      {/* Contenedor para las estrellas */}
       <div className="stars-port-container"></div>
 
       <div className="container">
-        <h2 className="section-title">Mis Proyectos</h2>
-        <p className="about-text">
-          Acá encontrarás mis proyectos realizados, de hecho ¡esta misma página es uno de ellos!
-        </p>
+        <h2 className="section-title">{t('Portafolio.project')}</h2>
+        <p className="about-text">{t('Portafolio.text')}</p>
         <div className="carousel-container">
           <div className="project-carousel">
             <div className="project-card active">
@@ -143,19 +147,51 @@ const Portafolio = () => {
               </div>
             </div>
           </div>
-          <div className="carousel-indicators">
-            {projects.map((_, idx) => (
-              <button
-                key={idx}
-                className={`carousel-indicator ${
-                  idx === currentProject ? 'active' : ''
-                }`}
-                onClick={() => {
-                  setCurrentProject(idx);
-                  setCurrentImage(0);
-                }}
-              />
-            ))}
+          
+          <div className="carousel-navigation"> 
+          <div className='padd'></div>
+            <div className="carousel-indicators">
+              <button 
+                className="nav-arrow left"
+                onClick={prevProject}
+              >
+                <ChevronLeft />
+              </button>
+              {(() => {
+                // Calculamos qué números mostrar basados en la posición actual
+                let start = Math.max(0, currentProject - 1);
+                let end = Math.min(projects.length, start + 3);
+                
+                // Ajustamos el inicio si estamos cerca del final
+                if (end === projects.length) {
+                  start = Math.max(0, end - 3);
+                }
+                
+                return Array.from({ length: end - start }, (_, i) => {
+                  const idx = start + i;
+                  return (
+                    <button
+                      key={idx}
+                      className={`carousel-indicator ${
+                        idx === currentProject ? 'active' : ''
+                      }`}
+                      onClick={() => {
+                        setCurrentProject(idx);
+                        setCurrentImage(0);
+                      }}
+                    >
+                      {idx + 1}
+                    </button>
+                  );
+                });
+              })()}
+              <button 
+                className="nav-arrow right"
+                onClick={nextProject}
+                >
+                <ChevronRight />
+              </button>
+            </div>
           </div>
         </div>
       </div>

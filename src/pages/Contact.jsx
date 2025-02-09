@@ -2,6 +2,7 @@ import '../styles/Contact.css';
 import { useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -10,6 +11,7 @@ const Contact = () => {
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     // Cargar reCAPTCHA v3
@@ -33,15 +35,15 @@ const Contact = () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     
     if (!formData.name.trim()) {
-      toast.error('Por favor ingresa tu nombre');
+      toast.error(t('Contact.pleaseName'));
       return false;
     }
     if (!emailRegex.test(formData.email)) {
-      toast.error('Por favor ingresa un email válido');
+      toast.error(t('Contact.pleaseEmail'));
       return false;
     }
     if (!formData.message.trim()) {
-      toast.error('Por favor ingresa un mensaje');
+      toast.error(t('Contact.pleaseMessage'));
       return false;
     }
     return true;
@@ -77,12 +79,12 @@ const Contact = () => {
       );
 
       if (response.status === 200) {
-        toast.success('¡Mensaje enviado con éxito!');
+        toast.success(t('Contact.success'));
         setFormData({ name: '', email: '', message: '' });
       }
     } catch (error) {
       console.error('Error:', error);
-      toast.error('Error al enviar el mensaje. Por favor intenta nuevamente.');
+      toast.error(t('Contact.error'));
     } finally {
       setIsSubmitting(false);
     }
@@ -91,7 +93,7 @@ const Contact = () => {
   return (
     <section id="contact" className="contact-section">
       <div className="container">
-        <h2 className="section-title">Contacto</h2>
+        <h2 className="section-title">{t('Contact.contact')}</h2>
         <div className="contact-content">
           <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-group">
@@ -100,7 +102,7 @@ const Contact = () => {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                placeholder="Nombre"
+                placeholder={t('Contact.name')}
                 required
               />
             </div>
@@ -119,7 +121,7 @@ const Contact = () => {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                placeholder="Mensaje"
+                placeholder={t('Contact.message')}
                 rows="6"
                 required
               ></textarea>
@@ -129,7 +131,7 @@ const Contact = () => {
               className={`btn btn-primary ${isSubmitting ? 'submitting' : ''}`}
               disabled={isSubmitting}
             >
-              {isSubmitting ? 'Enviando...' : 'Enviar mensaje'}
+              {t('Contact.send')}
             </button>
           </form>
         </div>

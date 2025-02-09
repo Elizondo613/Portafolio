@@ -1,7 +1,10 @@
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import '../styles/Home.css';
 
 const Home = () => {
+    const { t } = useTranslation();
+
     // Función para generar estrellas dinámicamente
     const generateStars = () => {
         const starsContainer = document.querySelector('.stars-container');
@@ -40,13 +43,13 @@ const Home = () => {
             {/* Contenido principal */}
             <div className="home-content">
                 <h1 className="title">
-                    <span className="greeting">¡Bienvenido! Mi nombre es</span>
+                    <span className="greeting">{t('home.greeting')}</span>
                     <span className="name">Javier Elizondo</span>
                 </h1>
-                <p className="subtitle">Desarrollador web especializado en landing pages y proyectos full-stack.</p>
+                <p className="subtitle">{t('home.profession')}</p>
                 <div className="cta-buttons">
-                    <a href="#portfolio" className="btn btn-primary">Ver Proyectos</a>
-                    <a href="#contact" className="btn btn-secondary">Contactar</a>
+                    <a href="#portfolio" className="btn btn-primary">{t('home.buttons.projects')}</a>
+                    <a href="#contact" className="btn btn-secondary">{t('home.buttons.contact')}</a>
                 </div>
             </div>
 
