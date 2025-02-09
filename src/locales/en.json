@@ -51,7 +51,8 @@
         "descriptions": {
             "description1": "Landing page for Pyro Communications",
             "description2": "Interactive multiplayer game for the board game Casa de Leyendas",
-            "description3": "Lottery roulette game Las Leyendas"
+            "description3": "Lottery roulette game Las Leyendas",
+            "description4": "Inventory management for the liquor store “Buffalo Licores”."
         }
     }
 }
