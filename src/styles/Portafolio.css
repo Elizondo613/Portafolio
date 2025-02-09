@@ -1,6 +1,25 @@
 .portfolio-section {
+  position: relative;
   background-color: var(--background);
   padding: 8rem 0;
+  overflow: hidden;
+}
+
+/* Contenedor principal */
+/*
+.container {
+  position: relative;
+  z-index: 1; /* El contenido principal está encima del fondo 
+}*/
+
+.container {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .about-text {
@@ -9,13 +28,14 @@
   max-width: 600px;
   font-size: 1.1rem;
   color: var(--text-secondary);
-
 }
 
 .carousel-container {
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem 0;
+  position: relative;
+  z-index: 2;
 }
 
 .project-carousel {
@@ -179,5 +199,36 @@
 
   .project-image-carousel {
     height: 300px;
+  }
+}
+
+/* Contenedor de las estrellas */
+.stars-port-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0; /* Asegura que las estrellas estén detrás de todo */
+}
+
+/* Estilo individual de cada estrella */
+.point {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: white;
+  border-radius: 50%;
+  animation: twinkle 2s infinite ease-in-out;
+}
+
+/* Animación de titilado */
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
   }
 }
