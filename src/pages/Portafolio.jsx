@@ -47,10 +47,10 @@ const Portafolio = () => {
 
   const projects = [
     {
-      title: 'Pyrobpo',
-      description: t('Portafolio.descriptions.description1'),
-      images: [img1, img2, img3],
-      tags: ['PHP', 'HTML', 'Tailwind CSS'],
+      title: 'Buffalo Licores',
+      description: t('Portafolio.descriptions.description4'),
+      images: [img12, img13, img14, img15],
+      tags: ['HTML', 'CSS', 'JavaScript', 'MySQL', 'Node.js', 'Express'],
     },
     {
       title: 'Casa de leyendas',
@@ -65,10 +65,10 @@ const Portafolio = () => {
       tags: ['React', 'HTML', 'Tailwind CSS', 'MongoDB', 'Node.js', 'Express'],
     },
     {
-      title: 'Buffalo Licores',
-      description: t('Portafolio.descriptions.description4'),
-      images: [img12, img13, img14, img15],
-      tags: ['HTML', 'CSS', 'JavaScript', 'MySQL', 'Node.js', 'Express'],
+      title: 'Pyrobpo',
+      description: t('Portafolio.descriptions.description1'),
+      images: [img1, img2, img3],
+      tags: ['PHP', 'HTML', 'Tailwind CSS'],
     },
   ];
 
