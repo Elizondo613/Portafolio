@@ -1,7 +1,7 @@
 {
     "home": {
         "greeting": "Welcome! My name is",
-        "profession": "Web developer specialized in landing pages and full-stack projects.",
+        "profession": "Web developer specialized in frontend, passionate about transforming ideas into interactive experiences.",
         "buttons": {
             "projects": "See projects",
             "contact": "Contact"
@@ -33,7 +33,7 @@
     },
     "About": {
         "about": "About me",
-        "description": "I'm a web developer passionate about creating impactful digital experiences. I specialize in React, HTML, Tailwind CSS and JavaScript, building everything from landing pages to complex full-stack web applications (MERN).",
+        "description": "I specialize in tools like React, HTML, Tailwind CSS and JavaScript, thanks to this I have developed landing pages, full-stack projects and even videogames, you can see some of my work below on this page!",
         "technology": "Technologies"
     },
     "Contact": {
