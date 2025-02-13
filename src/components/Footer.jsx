@@ -38,6 +38,7 @@ const Footer = () => {
               <a href="#about">{t('Footer.links.about')}</a>
               <a href="#portfolio">{t('Footer.links.portfolio')}</a>
               <a href="#contact">{t('Footer.links.contact')}</a>
+              <a href="#games">{t('Footer.links.games')}</a>
             </div>
             <div className="footer-social">
               <p>{t('Footer.follow')}</p>

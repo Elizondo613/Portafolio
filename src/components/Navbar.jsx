@@ -27,6 +27,7 @@ const Navbar = () => {
             <li><a href="#about">{t('Navbar.links.about')}</a></li>
             <li><a href="#portfolio">{t('Navbar.links.portfolio')}</a></li>
             <li><a href="#contact">{t('Navbar.links.contact')}</a></li>
+            <li><a href="#games">{t('Navbar.links.games')}</a></li>
           </ul>
           <div className="language-switcher">
             <LanguageSwitcher />

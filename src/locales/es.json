@@ -12,7 +12,8 @@
             "start": "Inicio",
             "about": "Sobre mí",
             "portfolio": "Portafolio",
-            "contact": "Contacto"
+            "contact": "Contacto",
+            "games": "Juegos"
         }
     },
     "LanguageSwitcher": {
@@ -24,7 +25,8 @@
             "start": "Inicio",
             "about": "Sobre mí",
             "portfolio": "Portafolio",
-            "contact": "Contacto"
+            "contact": "Contacto",
+            "games": "Juegos"
         },
         "follow": "Sígueme en:",
         "copy": "Todos los derechos reservados."
@@ -46,13 +48,24 @@
         "error": "Error al enviar el mensaje. Por favor intenta nuevamente."
     },
     "Portafolio": {
-        "project": "Mis Proyectos",
-        "text": "Acá encontrarás mis proyectos realizados, de hecho ¡esta misma página es uno de ellos!",
+        "project": "Proyectos",
+        "text": "Acá encontrarás los proyectos en los que he trabajado, de hecho ¡esta misma página es uno de ellos!",
         "descriptions": {
             "description1": "Landing page para Pyro Communications",
             "description2": "Juego interactivo multijugador para el juego de mesa Casa de Leyendas",
             "description3": "Juego de ruleta Lotería Las Leyendas",
             "description4": "Manejo de inventario para la licorería Buffalo Licores"
         }
+    },
+    "Games": {
+        "games": "Mis Juegos",
+        "text": "Una de mis pasiones son los videojuegos, por lo que el camino a crear el videojuego de mis sueños inicia aquí",
+        "descriptions": {
+            "description1": "Pon a prueba tu memoria y concentración en este juego de coincidencias. Descubre pares de cartas ocultas mientras intentas resolver el tablero en el menor tiempo posible.",
+            "description2": "Toma el control de una nave espacial y enfrenta oleadas de enemigos alienígenas en una batalla por la supervivencia.",
+            "description3": "Un juego sencillo pero desafiante que te mantendrá enganchado durante horas. Salta entre obstáculos y acumula puntos mientras disfrutas de una experiencia relajante pero emocionante.",
+            "description4": "Siembra semillas, cuida tus cultivos y cosecha recompensas mientras te adaptas a las cambiantes estaciones."
+        },
+        "play": "Jugar"
     }
 }

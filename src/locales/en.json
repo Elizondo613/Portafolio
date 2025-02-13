@@ -12,7 +12,8 @@
             "start": "Home",
             "about": "About me",
             "portfolio": "Portfolio",
-            "contact": "Contact"
+            "contact": "Contact",
+            "games": "Games"
         }
     },
     "LanguageSwitcher": {
@@ -24,7 +25,8 @@
             "start": "Home",
             "about": "About me",
             "portfolio": "Portfolio",
-            "contact": "Contact"
+            "contact": "Contact",
+            "games": "Games"
         },
         "follow": "Follow me on:",
         "copy": "All rights reserved."
@@ -47,12 +49,23 @@
     },
     "Portafolio": {
         "project": "My Projects",
-        "text": "Here you will find my completed projects, in fact this very page is one of them!   ",
+        "text": "Here you will find the projects I have worked on, in fact this very page is one of them!",
         "descriptions": {
             "description1": "Landing page for Pyro Communications",
             "description2": "Interactive multiplayer game for the board game Casa de Leyendas",
             "description3": "Lottery roulette game Las Leyendas",
             "description4": "Inventory management for the liquor store “Buffalo Licores”."
         }
+    },
+    "Games": {
+        "games": "My Games",
+        "text": "One of my passions is videogames, so the road to creating the videogame of my dreams starts here",
+        "descriptions": {
+            "description1": "Test your memory and concentration in this matching game. Discover pairs of hidden cards as you try to solve the board in the shortest time possible.",
+            "description2": "Take control of a spaceship and face waves of alien enemies in a battle for survival.",
+            "description3": "A simple but challenging game that will keep you hooked for hours. Jump between obstacles and collect points while enjoying a relaxing but exciting experience.",
+            "description4": "Sow seeds, tend your crops and reap rewards as you adapt to the changing seasons."
+        },
+        "play": "Play"
     }
 }
