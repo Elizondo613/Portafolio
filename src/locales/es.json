@@ -54,7 +54,8 @@
             "description1": "Landing page para Pyro Communications",
             "description2": "Juego interactivo multijugador para el juego de mesa Casa de Leyendas",
             "description3": "Juego de ruleta Lotería Las Leyendas",
-            "description4": "Manejo de inventario para la licorería Buffalo Licores"
+            "description4": "Manejo de inventario para la licorería Buffalo Licores",
+            "description5": "Plataforma de cartelera de cine con información actualizada de películas y horarios para reservas"
         }
     },
     "Games": {

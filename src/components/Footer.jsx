@@ -52,11 +52,14 @@ const Footer = () => {
                 <a href="https://steamcommunity.com/profiles/76561198410903687/" target="_blank" rel="noopener noreferrer">
                   <i className="fab fa-steam"></i>
                 </a>
+                <a href="https://discord.gg/vEHUF2ZkUn" target="_blank" rel="noopener noreferrer">
+                  <i className="fab fa-discord"></i>
+                </a>
               </div>
             </div>
           </div>
           <div className="footer-bottom">
-            <p>&copy; 2025 Elizondo. {t('Footer.copy')}</p>
+            <p>&copy; 2026 Elizondo. {t('Footer.copy')}</p>
           </div>
         </footer>
   

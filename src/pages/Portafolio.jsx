@@ -16,6 +16,10 @@ import img12 from '../assets/Buffalo.jpg';
 import img13 from '../assets/Buffalo2.jpg';
 import img14 from '../assets/Buffalo3.jpg';
 import img15 from '../assets/Buffalo4.jpg';
+import img16 from '../assets/ScreenCinema.png';
+import img17 from '../assets/ScreenCinema2.png';
+import img18 from '../assets/ScreenCinema3.png';
+import img19 from '../assets/ScreenCinema4.png';
 import { useTranslation } from 'react-i18next';
 
 const Portafolio = () => {
@@ -69,6 +73,12 @@ const Portafolio = () => {
       description: t('Portafolio.descriptions.description1'),
       images: [img1, img2, img3],
       tags: ['PHP', 'HTML', 'Tailwind CSS'],
+    },
+        {
+      title: 'CinemaGT',
+      description: t('Portafolio.descriptions.description5'),
+      images: [img16, img17, img18, img19],
+      tags: ['React', 'Vite', 'CSS3', 'Firebase'],
     },
   ];
 
