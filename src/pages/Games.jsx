@@ -16,6 +16,10 @@ import img10 from '../assets/Farm.jpg';
 import img11 from '../assets/Farm2.jpg';
 import img12 from '../assets/Farm3.jpg';
 import img13 from '../assets/Farm4.jpg';
+import img14 from '../assets/Space_runner.png';
+import img15 from '../assets/Space_runner2.png';
+import img16 from '../assets/Space_runner3.png';
+import img17 from '../assets/Space_runner4.png';
 
 const GamesShowcase = () => {
   const [currentGame, setCurrentGame] = useState(0);
@@ -72,6 +76,13 @@ const GamesShowcase = () => {
         images: [img10, img11, img12, img13],
         link: 'https://elizondo613.github.io/Pixel-Farmer/',
         tags: ['HTML5', 'CSS Canvas', 'JavaScript'],
+    },
+        {
+        title: 'Space Runner',
+        description: t('Games.descriptions.description5'),
+        images: [img14, img15, img16, img17],
+        link: 'https://elizondo613.github.io/Space_Race/',
+        tags: ['HTML5', 'CSS', 'JavaScript'],
     },
   ];
 
