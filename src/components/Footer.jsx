@@ -66,7 +66,7 @@ const Footer = () => {
             </footer>
 
             <a
-                href="https://wa.me/+50258119510?text=Hola,%20me%20interesa%20tu%20trabajo"
+                href="https://wa.me/+50258119510?text=Hola%20Javi!%20Vi%20tu%20página%20y%20me%20interesa%20tu%20trabajo."
                 className="whatsapp-button"
                 target="_blank"
                 rel="noopener noreferrer"
