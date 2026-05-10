@@ -1,12 +1,8 @@
-import '../styles/Contact.css';
-import { useState, useEffect, useRef } from 'react';
-import emailjs from '@emailjs/browser';
-import { toast } from 'react-toastify';
+import { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
+import '../styles/Contact.css';
 
 const Contact = () => {
-    const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-    const [isSubmitting, setIsSubmitting] = useState(false);
     const { t } = useTranslation();
     const starsRef = useRef(null);
 
@@ -24,62 +20,35 @@ const Contact = () => {
         }
     }, []);
 
-    useEffect(() => {
-        const script = document.createElement('script');
-        script.src = `https://www.google.com/recaptcha/api.js?render=${import.meta.env.VITE_RECAPTCHA_SITE_KEY}`;
-        script.async = true;
-        document.body.appendChild(script);
-    }, []);
-
-    const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
-
-    const validateForm = () => {
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!formData.name.trim()) { toast.error(t('Contact.pleaseName')); return false; }
-        if (!emailRegex.test(formData.email)) { toast.error(t('Contact.pleaseEmail')); return false; }
-        if (!formData.message.trim()) { toast.error(t('Contact.pleaseMessage')); return false; }
-        return true;
-    };
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        if (!validateForm()) return;
-        try {
-            setIsSubmitting(true);
-            const recaptchaToken = await window.grecaptcha.execute(
-                import.meta.env.VITE_RECAPTCHA_SITE_KEY,
-                { action: 'submit' }
-            );
-            const templateParams = {
-                from_name: formData.name,
-                reply_to: formData.email,
-                message: formData.message,
-                'g-recaptcha-response': recaptchaToken
-            };
-            const response = await emailjs.send(
-                import.meta.env.VITE_EMAILJS_SERVICE_ID,
-                import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-                templateParams,
-                import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-            );
-            if (response.status === 200) {
-                toast.success(t('Contact.success'));
-                setFormData({ name: '', email: '', message: '' });
-            }
-        } catch (error) {
-            console.error('Error:', error);
-            toast.error(t('Contact.error'));
-        } finally {
-            setIsSubmitting(false);
-        }
-    };
+    const WHATSAPP_NUMBER = '50258119510';
+    const WHATSAPP_MESSAGE = encodeURIComponent(t('Contact.whatsappMessage'));
+    const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`;
 
     const contactInfo = [
-        { icon: '📧', label: 'Email', value: 'elizondo613dev@gmail.com' },
-        { icon: '💬', label: 'WhatsApp', value: '+502 5811-9510' },
-        { icon: '🌐', label: 'GitHub', value: 'github.com/Elizondo613' },
+        {
+            icon: '💬',
+            label: 'WhatsApp',
+            value: '+502 5811-9510',
+            href: WHATSAPP_URL,
+        },
+        {
+            icon: '🌐',
+            label: 'GitHub',
+            value: 'github.com/Elizondo613',
+            href: 'https://github.com/Elizondo613',
+        },
+        {
+            icon: '🛒',
+            label: 'Tienda',
+            value: 'payhip.com/CodeXela',
+            href: 'https://payhip.com/CodeXela',
+        },
+    ];
+
+    const socials = [
+        { href: 'https://github.com/Elizondo613',                        icon: 'fab fa-github',    label: 'GitHub' },
+        { href: 'https://www.instagram.com/javi_elizondo_613/',          icon: 'fab fa-instagram', label: 'Instagram' },
+        { href: 'https://www.linkedin.com/in/jose-javier-elizondo-mendoza-063783331',     icon: 'fab fa-linkedin',  label: 'LinkedIn' },
     ];
 
     return (
@@ -90,69 +59,75 @@ const Contact = () => {
                 <h2 className="section-title">{t('Contact.contact')}</h2>
 
                 <div className="contact-layout">
-                    {/* Info lateral */}
+
+                    {/* ── Columna izquierda: info ── */}
                     <div className="contact-info">
                         <h3 className="contact-info-title">{t('Contact.letsConnect')}</h3>
                         <p className="contact-info-desc">{t('Contact.infoDesc')}</p>
+
                         <div className="contact-info-items">
-                            {contactInfo.map(({ icon, label, value }) => (
-                                <div key={label} className="contact-info-item">
+                            {contactInfo.map(({ icon, label, value, href }) => (
+                                <a
+                                    key={label}
+                                    href={href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="contact-info-item"
+                                >
                                     <span className="contact-info-icon">{icon}</span>
                                     <div>
                                         <span className="contact-info-label">{label}</span>
                                         <span className="contact-info-value">{value}</span>
                                     </div>
-                                </div>
+                                    <span className="contact-info-arrow">→</span>
+                                </a>
                             ))}
                         </div>
 
                         <div className="contact-socials">
-                            <a href="https://github.com/Elizondo613" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
-                            <a href="https://www.instagram.com/javi_elizondo_613/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
-                            <a href="https://discord.gg/vEHUF2ZkUn" target="_blank" rel="noopener noreferrer"><i className="fab fa-discord"></i></a>
+                            {socials.map(({ href, icon, label }) => (
+                                <a
+                                    key={label}
+                                    href={href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label={label}
+                                >
+                                    <i className={icon}></i>
+                                </a>
+                            ))}
                         </div>
                     </div>
 
-                    {/* Formulario */}
-                    <form className="contact-form" onSubmit={handleSubmit}>
-                        <div className="form-group">
-                            <input
-                                type="text"
-                                name="name"
-                                value={formData.name}
-                                onChange={handleChange}
-                                placeholder={t('Contact.name')}
-                                required
-                            />
+                    {/* ── Columna derecha: CTA WhatsApp ── */}
+                    <div className="contact-cta">
+                        <div className="contact-cta-card">
+                            <div className="contact-cta-icon">
+                                <i className="fab fa-whatsapp"></i>
+                            </div>
+                            <h3 className="contact-cta-title">{t('Contact.cta.title')}</h3>
+                            <p className="contact-cta-desc">{t('Contact.cta.desc')}</p>
+
+                            <div className="contact-cta-chips">
+                                <span>{t('Contact.cta.chip1')}</span>
+                                <span>{t('Contact.cta.chip2')}</span>
+                                <span>{t('Contact.cta.chip3')}</span>
+                            </div>
+
+                            <a
+                                href={WHATSAPP_URL}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="contact-whatsapp-btn"
+                            >
+                                <i className="fab fa-whatsapp"></i>
+                                {t('Contact.cta.button')}
+                            </a>
+
+                            <p className="contact-cta-note">{t('Contact.cta.note')}</p>
                         </div>
-                        <div className="form-group">
-                            <input
-                                type="email"
-                                name="email"
-                                value={formData.email}
-                                onChange={handleChange}
-                                placeholder="Email"
-                                required
-                            />
-                        </div>
-                        <div className="form-group">
-                            <textarea
-                                name="message"
-                                value={formData.message}
-                                onChange={handleChange}
-                                placeholder={t('Contact.message')}
-                                rows="6"
-                                required
-                            ></textarea>
-                        </div>
-                        <button
-                            type="submit"
-                            className={`btn btn-primary ${isSubmitting ? 'submitting' : ''}`}
-                            disabled={isSubmitting}
-                        >
-                            {t('Contact.send')}
-                        </button>
-                    </form>
+                    </div>
+
                 </div>
             </div>
         </section>

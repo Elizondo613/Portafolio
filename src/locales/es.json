@@ -68,12 +68,21 @@
         "tabs": { "templates": "Templates", "scripts": "Scripts" },
         "buy": "Comprar",
         "items": {
-            "example": { "desc": "Descripción de la template" },
-            "scriptExample": { "desc": "Descripción del script" }
+            "example": { "desc": "Aura es una template de enlaces bio premium, una alternativa autohospedada a Linktree. Construida completamente con HTML, CSS y JavaScript vanilla sin dependencias de librerías" },
+            "scriptExample": { "desc": "Descripción del script" },
+            "example2": { "desc2": "CyberSafe es una template HTML oscura premium para empresas de ciberseguridad, servicios VPN, startups de IT y productos SaaS de seguridad. Construida con HTML, CSS y JavaScript puro" },
+            "scriptExample2": { "desc2": "Descripción del script" },
+            "example3": { "desc3": "Lumina AI es una template HTML de modo claro premium construida para productos SaaS impulsados por IA, herramientas para desarrolladores y startups de micro-SaaS." },
+            "scriptExample3": { "desc3": "Descripción del script" },
+            "example4": { "desc4": "NexVault es una template HTML de modo oscuro premium construida para billeteras de criptomonedas, plataformas DeFi y productos fintech." },
+            "scriptExample4": { "desc4": "Descripción del script" },
+            "example5": { "desc5": "Vortex es una template HTML oscura premium construida para equipos profesionales de esports, organizaciones de gaming, streamers y creadores de contenido." },
+            "scriptExample5": { "desc5": "Descripción del script" }
         }
     },
     "About": {
         "about": "Sobre mí",
+        "technology": "Tecnologías",
         "description": "Desarrollador Full-Stack y de Videojuegos con más de 4 años de experiencia creando productos digitales de alto impacto. Especialista en construir interfaces interactivas, sistemas backend robustos y arquitectura segura. Mi enfoque combina el desarrollo ágil con una mentalidad de Ciberseguridad Ofensiva, garantizando soluciones funcionales y protegidas.",
         "stats": {
             "years": "Años de experiencia",
@@ -115,16 +124,20 @@
     },
     "Contact": {
         "contact": "Contacto",
-        "name": "Nombre",
-        "message": "Mensaje",
-        "send": "Enviar mensaje",
-        "pleaseName": "Por favor ingresa tu nombre",
-        "pleaseEmail": "Por favor ingresa un email válido",
-        "pleaseMessage": "Por favor ingresa un mensaje",
         "success": "¡Mensaje enviado con éxito!",
         "error": "Error al enviar el mensaje. Por favor intenta nuevamente.",
         "letsConnect": "Hablemos",
-        "infoDesc": "¿Tienes un proyecto en mente? Escríbeme."
+        "infoDesc": "¿Tienes un proyecto en mente? Escríbeme.",
+        "whatsappMessage": "Hola Javi! Vi tu página Kemet Studio y me interesa tu trabajo.",
+        "cta": {
+            "title": "Escribeme por WhatsApp",
+            "desc": "¿Tienes un proyecto en mente? Hablemos directamente, sin formularios ni intermediarios.",
+            "chip1": "🎮 Videojuegos",
+            "chip2": "💻 Desarrollo Web",
+            "chip3": "🎨 Templates",
+            "button": "Abrir WhatsApp",
+            "note": "Respondo en menos de 24 horas"
+        }
     },
     "Portafolio": {
         "project": "Proyectos",

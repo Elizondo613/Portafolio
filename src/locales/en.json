@@ -68,12 +68,21 @@
         "tabs": { "templates": "Templates", "scripts": "Scripts" },
         "buy": "Buy",
         "items": {
-            "example": { "desc": "Template description" },
-            "scriptExample": { "desc": "Script description" }
+            "example": { "desc": "AURA is a premium mobile-first bio-link template — a self-hosted alternative to Linktree. Built entirely with HTML, CSS and vanilla JS with zero library dependencies" },
+            "scriptExample": { "desc": "Script description" },
+            "example2": { "desc2": "CyberSafe is a premium dark HTML template for cybersecurity companies, VPN services, IT startups, and SaaS security products. Built with pure HTML, CSS, and JavaScript" },
+            "scriptExample2": { "desc2": "Script description" },
+            "example3": { "desc3": "Lumina AI is a premium light-mode HTML template built for AI-powered SaaS products, developer tools, and micro-SaaS startups." },
+            "scriptExample3": { "desc3": "Script description" },
+            "example4": { "desc4": "NexVault is a premium dark-mode HTML template built for crypto wallets, DeFi platforms, and fintech products." },
+            "scriptExample4": { "desc4": "Script description" },
+            "example5": { "desc5": "Vortex is a premium dark HTML template built for professional esports teams, gaming organizations, streamers and content creators." },
+            "scriptExample5": { "desc5": "Script description" }
         }
     },
     "About": {
         "about": "About me",
+        "technology": "Technologies",    
         "description": "Full-Stack & Game Developer with 4+ years of experience building high-impact digital products. Specialist in interactive interfaces, robust backend systems, and secure architecture. My approach combines agile development with an Offensive Cybersecurity mindset.",
         "stats": {
             "years": "Years of experience",
@@ -115,16 +124,20 @@
     },
     "Contact": {
         "contact": "Contact",
-        "name": "Name",
-        "message": "Message",
-        "send": "Send message",
-        "pleaseName": "Please enter your name",
-        "pleaseEmail": "Please enter a valid email address",
-        "pleaseMessage": "Please enter a message.",
         "success": "Message sent successfully!",
         "error": "Error sending message. Please try again.",
         "letsConnect": "Let's connect",
-        "infoDesc": "Have a project in mind? Write to me."
+        "infoDesc": "Have a project in mind? Write to me.",
+        "whatsappMessage": "Hi Javier! I saw your Kemet Studio page and I'm interested in your work.",
+        "cta": {
+            "title": "Message me on WhatsApp",
+            "desc": "Have a project in mind? Let's talk directly, no forms or middlemen.",
+            "chip1": "🎮 Video Games",
+            "chip2": "💻 Web Development",
+            "chip3": "🎨 Templates",
+            "button": "Open WhatsApp",
+            "note": "I respond within 24 hours"
+        }
     },
     "Portafolio": {
         "project": "My Projects",

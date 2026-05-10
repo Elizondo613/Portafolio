@@ -51,6 +51,12 @@ const Footer = () => {
                             <a href="https://discord.gg/vEHUF2ZkUn" target="_blank" rel="noopener noreferrer">
                                 <i className="fab fa-discord"></i>
                             </a>
+                            <a href="https://www.linkedin.com/in/jose-javier-elizondo-mendoza-063783331" target="_blank" rel="noopener noreferrer">
+                                <i className="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCGaMiA00t_fUEQvE-D8cozA" target="_blank" rel="noopener noreferrer">
+                                <i className="fab fa-youtube"></i>
+                            </a>
                         </div>
                     </div>
                 </div>

@@ -40,7 +40,7 @@ const Templates = () => {
         {
             id: 2,
             title: 'CyberSafe - Dark Cybersecurity & VPN HTML Template',
-            description: t('Templates.items.example.desc'),
+            description: t('Templates.items.example2.desc2'),
             preview: image2,
             tags: ['HTML', 'CSS', 'JavaScript'],
             price: '$19.00',
@@ -49,7 +49,7 @@ const Templates = () => {
         {
             id: 3,
             title: 'Lumina AI — SaaS & AI Product HTML Template',
-            description: t('Templates.items.example.desc'),
+            description: t('Templates.items.example3.desc3'),
             preview: image3,
             tags: ['HTML', 'CSS', 'JavaScript'],
             price: '$24.00',
@@ -58,7 +58,7 @@ const Templates = () => {
                 {
             id: 4,
             title: 'NexVault — Crypto & Fintech Wallet HTML Template',
-            description: t('Templates.items.example.desc'),
+            description: t('Templates.items.example4.desc4'),
             preview: image4,
             tags: ['HTML', 'CSS', 'JavaScript'],
             price: '$29.00',
@@ -67,7 +67,7 @@ const Templates = () => {
                 {
             id: 5,
             title: 'Vortex – E-Sports & Gaming Team HTML Template',
-            description: t('Templates.items.example.desc'),
+            description: t('Templates.items.example5.desc5'),
             preview: image5,
             tags: ['HTML', 'CSS', 'JavaScript'],
             price: '$19.00',

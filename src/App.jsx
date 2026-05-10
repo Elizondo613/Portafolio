@@ -12,7 +12,6 @@ import Portafolio from './pages/Portafolio';
 import Contact from './pages/Contact';
 import Games from './pages/Games';
 import Templates from './pages/Templates';
-// import PersonalProjects from './pages/PersonalProjects';
 
 const App = () => {
   return (
@@ -27,7 +26,6 @@ const App = () => {
           <Route path="/games" element={<Games />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/templates" element={<Templates />} />
-          {/* <Route path="/projects" element={<PersonalProjects />} /> */}
         </Routes>
       </main>
       <Footer />
