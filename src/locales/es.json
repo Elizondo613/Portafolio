@@ -5,6 +5,35 @@
         "buttons": {
             "projects": "Ver Proyectos",
             "contact": "Contactar"
+        },
+        "categories": {
+            "eyebrow": "Explora todo lo que hacemos",
+            "title": "¿Qué encontrarás aquí?",
+            "games": {
+                "title": "Videojuegos",
+                "desc": "Juegos que he creado y publicado"
+            },
+            "templates": {
+                "title": "Templates",
+                "desc": "Plantillas listas para usar y comprar"
+            },
+            "portfolio": {
+                "title": "Portafolio",
+                "desc": "Mis proyectos de desarrollo"
+            },
+            "about": {
+                "title": "Sobre mí",
+                "desc": "Conoce más sobre quién soy"
+            }
+        },
+        "badge": "Estudio de desarrollo digital",
+        "tagline": "Games · Templates · Full-Stack Dev",
+        "subtitle": "Construimos experiencias digitales que trascienden — videojuegos, herramientas y software a medida desde Guatemala para el mundo.",
+        "metrics": {
+            "years": "Años de exp.",
+            "games": "Videojuegos",
+            "projects": "Proyectos",
+            "products": "Productos"
         }
     },
     "Navbar": {
@@ -13,28 +42,76 @@
             "about": "Sobre mí",
             "portfolio": "Portafolio",
             "contact": "Contacto",
-            "games": "Juegos"
+            "games": "Juegos",
+            "templates": "Templates"
         }
     },
     "LanguageSwitcher": {
         "language": "Idioma"
     },
     "Footer": {
-        "slogan": "Desarrollando experiencias web excepcionales",
+        "slogan": "Construyendo sistemas seguros y experiencias interactivas excepcionales",
         "links": {
             "start": "Inicio",
             "about": "Sobre mí",
             "portfolio": "Portafolio",
             "contact": "Contacto",
-            "games": "Juegos"
+            "games": "Juegos",
+            "templates": "Templates"
         },
         "follow": "Sígueme en:",
         "copy": "Todos los derechos reservados."
     },
+    "Templates": {
+        "title": "Mis Productos",
+        "subtitle": "Templates y scripts listos para usar",
+        "tabs": { "templates": "Templates", "scripts": "Scripts" },
+        "buy": "Comprar",
+        "items": {
+            "example": { "desc": "Descripción de la template" },
+            "scriptExample": { "desc": "Descripción del script" }
+        }
+    },
     "About": {
         "about": "Sobre mí",
-        "description": "Me especializo en herramientas como React, HTML, Tailwind CSS y JavaScript, gracias a esto he desarrollado landing pages, proyectos full-stack y hasta videojuegos. ¡Podrás ver parte de mi trabajo más abajo en esta página!",
-        "technology": "Tecnologías"
+        "description": "Desarrollador Full-Stack y de Videojuegos con más de 4 años de experiencia creando productos digitales de alto impacto. Especialista en construir interfaces interactivas, sistemas backend robustos y arquitectura segura. Mi enfoque combina el desarrollo ágil con una mentalidad de Ciberseguridad Ofensiva, garantizando soluciones funcionales y protegidas.",
+        "stats": {
+            "years": "Años de experiencia",
+            "projects": "Proyectos",
+            "games": "Videojuegos",
+            "products": "Productos digitales"
+        },
+        "skills": {
+            "gamedev": "Gamedev",
+            "cybersec": "Ciberseguridad"
+        },
+        "experience": {
+            "title": "Experiencia",
+            "erp": {
+                "role": "Líder Módulo de Facturación — ERP CDRO",
+                "desc": "Líder del módulo de Facturación en un sistema institucional para cliente real. Implementación completa de arquitectura backend y routing RESTful."
+            },
+            "buffalo": {
+                "role": "Desarrollador de Inventarios",
+                "desc": "Diseño de software a medida para manejo de stock y logística."
+            },
+            "casaleyendas": {
+                "role": "Desarrollador de Videojuegos",
+                "desc": "Coordinación técnica para la app móvil Casa de Leyendas, implementando mecánicas multijugador."
+            }
+        },
+        "education": {
+            "title": "Educación y Certificaciones",
+            "isc2": {
+                "period": "En proceso"
+            },
+            "cisco": {
+                "title": "Ciberseguridad y Redes"
+            },
+            "platzi": {
+                "title": "React y Desarrollo Full-Stack"
+            }
+        }
     },
     "Contact": {
         "contact": "Contacto",
@@ -45,7 +122,9 @@
         "pleaseEmail": "Por favor ingresa un email válido",
         "pleaseMessage": "Por favor ingresa un mensaje",
         "success": "¡Mensaje enviado con éxito!",
-        "error": "Error al enviar el mensaje. Por favor intenta nuevamente."
+        "error": "Error al enviar el mensaje. Por favor intenta nuevamente.",
+        "letsConnect": "Hablemos",
+        "infoDesc": "¿Tienes un proyecto en mente? Escríbeme."
     },
     "Portafolio": {
         "project": "Proyectos",

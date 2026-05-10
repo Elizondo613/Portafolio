@@ -1,5 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import App from './App.jsx';
@@ -12,22 +13,18 @@ i18n
     .use(initReactI18next)
     .init({
         resources: {
-            es: {
-                translation: translationES
-            },
-            en: {
-                translation: translationEN
-            }
+            es: { translation: translationES },
+            en: { translation: translationEN }
         },
-        lng: 'es', // idioma por defecto
+        lng: 'es',
         fallbackLng: 'es',
-        interpolation: {
-            escapeValue: false
-        }
+        interpolation: { escapeValue: false }
     });
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </StrictMode>,
-)
+);

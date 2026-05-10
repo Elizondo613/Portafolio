@@ -1,11 +1,11 @@
 .games-section {
     position: relative;
     background-color: var(--background);
-    padding: 4rem 0;
+    padding: 8rem 0 5rem;
     overflow: hidden;
-  }
-  
-  .stars-games-container {
+}
+
+.stars-games-container {
     position: absolute;
     top: 0;
     left: 0;
@@ -13,66 +13,94 @@
     height: 100%;
     overflow: hidden;
     z-index: 0;
-  }
-  
-  .games-container {
+    pointer-events: none;
+}
+
+.games-container {
     position: relative;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 2rem;
     z-index: 1;
-  }
-  
-  .games-text {
-    margin: 1rem auto 2rem;
+}
+
+.games-text {
+    margin: 1rem auto 3rem;
     text-align: center;
     max-width: 600px;
     font-size: 1.1rem;
     color: var(--text-secondary);
-  }
-  
-  .games-showcase {
+}
+
+/* ── Lista de juegos ── */
+.games-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+/* ── Feature row ── */
+.game-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: rowFadeUp 0.6s ease-out forwards;
+}
+
+.game-row--reversed {
+    direction: rtl; /* invierte el orden de columnas */
+}
+
+.game-row--reversed > * {
+    direction: ltr; /* restaura dirección del texto */
+}
+
+/* Animación escalonada por índice */
+.games-list .game-row:nth-child(1) { animation-delay: 0.0s; }
+.games-list .game-row:nth-child(2) { animation-delay: 0.1s; }
+.games-list .game-row:nth-child(3) { animation-delay: 0.2s; }
+.games-list .game-row:nth-child(4) { animation-delay: 0.3s; }
+.games-list .game-row:nth-child(5) { animation-delay: 0.4s; }
+
+@keyframes rowFadeUp {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Media (imagen + botón) ── */
+.game-row-media {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: center;
+}
+
+.game-row-carousel {
     position: relative;
     width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  
-  .game-card {
-    background: var(--surface);
-    border-radius: 12px;
+    border-radius: 16px;
     overflow: hidden;
-    transition: var(--transition-smooth);
-  }
-  
-  .game-frame {
-    position: relative;
-    width: 100%;
-    padding: 1rem;
+    border: 2px solid rgba(123, 110, 246, 0.3);
+    aspect-ratio: 16 / 9;
     background: var(--surface);
-  }
-  
-  .game-image-carousel {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    border: 4px solid var(--accent);
-    border-radius: 12px;
-    overflow: hidden;
-  }
-  
-  .game-image {
-    position: absolute;
-    top: 0;
-    left: 0;
+}
+
+.game-row-img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    transition: transform 0.3s ease;
-  }
-  
-  .image-controls {
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.game-row-carousel:hover .game-row-img {
+    transform: scale(1.03);
+}
+
+/* Controles de imagen */
+.game-row-controls {
     position: absolute;
     top: 50%;
     left: 0;
@@ -80,207 +108,170 @@
     transform: translateY(-50%);
     display: flex;
     justify-content: space-between;
-    padding: 0 1rem;
+    padding: 0 0.75rem;
     pointer-events: none;
-  }
-  
-  .image-nav-button {
-    background: var(--surface);
+}
+
+.game-row-nav {
+    background: rgba(15, 15, 26, 0.8);
     border: 2px solid var(--accent);
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: all 0.3s ease;
     pointer-events: auto;
-    opacity: 0.8;
-  }
-  
-  .image-nav-button:hover {
+    transition: var(--transition-smooth);
+    color: var(--text);
+}
+
+.game-row-nav:hover {
     background: var(--accent);
-    color: white;
-    opacity: 1;
-  }
-  
-  .image-indicators {
+}
+
+/* Dots */
+.game-row-dots {
     position: absolute;
-    bottom: 1rem;
+    bottom: 0.75rem;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    gap: 0.5rem;
-    z-index: 2;
-  }
-  
-  .image-dot {
-    width: 8px;
-    height: 8px;
+    gap: 0.4rem;
+}
+
+.game-row-dot {
+    width: 7px;
+    height: 7px;
     border-radius: 50%;
     background: var(--text);
     border: none;
     cursor: pointer;
-    transition: all 0.3s ease;
-    opacity: 0.5;
+    opacity: 0.4;
     padding: 0;
-  }
-  
-  .image-dot.active {
+    transition: var(--transition-smooth);
+}
+
+.game-row-dot.active {
     background: var(--accent);
     opacity: 1;
-  }
-  
-  .play-button {
-    padding: 0.75rem 1.5rem;
-    background: var(--accent);
+}
+
+/* Botón jugar */
+.game-play-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 2rem;
+    background: var(--gradient-primary);
     color: white;
-    border-radius: 25px;
+    border-radius: 50px;
     text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .game-info {
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: var(--transition-smooth);
+    box-shadow: 0 4px 20px rgba(74, 58, 255, 0.3);
+}
+
+.game-play-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(74, 58, 255, 0.45);
+}
+
+/* ── Info ── */
+.game-row-info {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; 
-    gap: 1rem; 
-    padding: 1.5rem;
-    background: var(--surface);
-  }
+    gap: 1rem;
+}
 
-  .game-info .play-button {
-    align-self: flex-end;
-  }
-  
-  .game-info h3 {
+.game-row-number {
+    font-size: 3.5rem;
+    font-weight: 800;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+    opacity: 0.4;
+}
+
+.game-row-title {
+    font-size: 1.75rem;
+    font-weight: 700;
     color: var(--text);
-    margin-bottom: 0.5rem;
-    font-size: 1.5rem;
-  }
-  
-  .game-info p {
+    margin: 0;
+}
+
+.game-row-desc {
+    font-size: 1rem;
     color: var(--text-secondary);
-    margin-bottom: 1rem;
-    line-height: 1.6;
-  }
-  
-  .game-tags {
+    line-height: 1.8;
+    margin: 0;
+}
+
+.game-row-tags {
     display: flex;
-    gap: 0.5rem;
     flex-wrap: wrap;
-  }
-  
-  .game-tag {
+    gap: 0.5rem;
+}
+
+.game-tag {
     background: rgba(74, 58, 255, 0.1);
-    padding: 0.25rem 0.75rem;
-    border-radius: 15px;
+    border: 1px solid rgba(123, 110, 246, 0.3);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
     font-size: 0.8rem;
     color: var(--accent);
-  }
-  
-  .games-navigation {
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-  }
-  
-  .games-indicators {
-    display: flex;
-    gap: 0.5rem;
-  }
-  
-  .game-indicator {
-    width: 35px;
-    height: 35px;
-    border-radius: 8px;
-    background: var(--surface);
-    border: 2px solid var(--accent);
-    color: var(--text);
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-  }
-  
-  .game-indicator.active {
-    background: var(--accent);
-    color: white;
-  }
-  
-  .carousel-nav-button {
-    background: var(--surface);
-    border: 2px solid var(--accent);
-    border-radius: 8px;
-    width: 35px;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .carousel-nav-button:hover {
-    background: var(--accent);
-    color: white;
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .games-section {
-      padding: 2rem 0;
-    }
-  
-    .game-frame {
-      padding: 0.5rem;
-    }
+}
 
-    .game-info {
-        align-items: center;
-    }
-    
-    .game-info .play-button {
-        align-self: center; 
-    }
-  
-    .image-nav-button {
-      width: 32px;
-      height: 32px;
-    }
-  
-    .game-indicator {
-      width: 30px;
-      height: 30px;
-      font-size: 0.9rem;
-    }
-  
-    .carousel-nav-button {
-      width: 30px;
-      height: 30px;
-    }
-  
-    .game-info h3 {
-      font-size: 1.25rem;
-    }
-  }
-  
-  /* Inherit stars animation from portfolio component */
-  .point {
+/* Separador entre juegos */
+.games-list .game-row:not(:last-child)::after {
+    content: '';
+    display: block;
+    grid-column: 1 / -1;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.06);
+    margin-top: 2.5rem;
+}
+
+/* ── Stars ── */
+.point {
     position: absolute;
     width: 2px;
     height: 2px;
     background-color: white;
     border-radius: 50%;
     animation: twinkle 2s infinite ease-in-out;
-  }
-  
-  @keyframes twinkle {
+}
+
+@keyframes twinkle {
     0%, 100% { opacity: 1; }
     50% { opacity: 0.2; }
-  }
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+    .games-section {
+        padding: 6rem 0 4rem;
+    }
+
+    .game-row,
+    .game-row--reversed {
+        grid-template-columns: 1fr;
+        direction: ltr;
+        gap: 1.5rem;
+    }
+
+    .game-row-number {
+        font-size: 2.5rem;
+    }
+
+    .game-row-title {
+        font-size: 1.4rem;
+    }
+
+    .games-list {
+        gap: 3.5rem;
+    }
+}

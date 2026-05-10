@@ -5,6 +5,35 @@
         "buttons": {
             "projects": "See projects",
             "contact": "Contact"
+        },
+        "categories": {
+            "eyebrow": "Explore everything we do",
+            "title": "What will you find here?",
+            "games": {
+                "title": "Videogames",
+                "desc": "Games I've created and published"
+            },
+            "templates": {
+                "title": "Templates",
+                "desc": "Ready-to-use templates to buy"
+            },
+            "portfolio": {
+                "title": "Portfolio",
+                "desc": "My development projects"
+            },
+            "about": {
+                "title": "About me",
+                "desc": "Learn more about who I am"
+            }
+        },
+        "badge": "Digital development studio",
+        "tagline": "Games · Templates · Full-Stack Dev",
+        "subtitle": "We build digital experiences that transcend — games, tools and custom software from Guatemala to the world.",
+        "metrics": {
+            "years": "Yrs of exp.",
+            "games": "Video games",
+            "projects": "Projects",
+            "products": "Products"
         }
     },
     "Navbar": {
@@ -13,28 +42,76 @@
             "about": "About me",
             "portfolio": "Portfolio",
             "contact": "Contact",
-            "games": "Games"
+            "games": "Games",
+            "templates": "Templates"
         }
     },
     "LanguageSwitcher": {
         "language": "Language"
     },
     "Footer": {
-        "slogan": "Developing exceptional web experiences",
+        "slogan": "Building secure systems and exceptional interactive experiences",
         "links": {
             "start": "Home",
             "about": "About me",
             "portfolio": "Portfolio",
             "contact": "Contact",
-            "games": "Games"
+            "games": "Games",
+            "templates": "Templates"
         },
         "follow": "Follow me on:",
         "copy": "All rights reserved."
     },
+    "Templates": {
+        "title": "My Products",
+        "subtitle": "Ready-to-use templates and scripts",
+        "tabs": { "templates": "Templates", "scripts": "Scripts" },
+        "buy": "Buy",
+        "items": {
+            "example": { "desc": "Template description" },
+            "scriptExample": { "desc": "Script description" }
+        }
+    },
     "About": {
         "about": "About me",
-        "description": "I specialize in tools like React, HTML, Tailwind CSS and JavaScript, thanks to this I have developed landing pages, full-stack projects and even videogames, you can see some of my work below on this page!",
-        "technology": "Technologies"
+        "description": "Full-Stack & Game Developer with 4+ years of experience building high-impact digital products. Specialist in interactive interfaces, robust backend systems, and secure architecture. My approach combines agile development with an Offensive Cybersecurity mindset.",
+        "stats": {
+            "years": "Years of experience",
+            "projects": "Projects",
+            "games": "Video Games",
+            "products": "Digital products"
+        },
+        "skills": {
+            "gamedev": "Gamedev",
+            "cybersec": "Cybersecurity"
+        },
+        "experience": {
+            "title": "Experience",
+            "erp": {
+                "role": "Billing Module Lead — ERP CDRO",
+                "desc": "Led the Billing module in an institutional system for a real client. Full backend architecture and RESTful routing implementation."
+            },
+            "buffalo": {
+                "role": "Inventory Developer",
+                "desc": "Custom software design for stock management and logistics."
+            },
+            "casaleyendas": {
+                "role": "Game Developer",
+                "desc": "Technical coordination for the Casa de Leyendas mobile app, implementing multiplayer mechanics."
+            }
+        },
+        "education": {
+            "title": "Education & Certifications",
+            "isc2": {
+                "period": "In progress"
+            },
+            "cisco": {
+                "title": "Cybersecurity & Networking"
+            },
+            "platzi": {
+                "title": "React & Full-Stack Development"
+            }
+        }
     },
     "Contact": {
         "contact": "Contact",
@@ -45,7 +122,9 @@
         "pleaseEmail": "Please enter a valid email address",
         "pleaseMessage": "Please enter a message.",
         "success": "Message sent successfully!",
-        "error": "Error sending message. Please try again."
+        "error": "Error sending message. Please try again.",
+        "letsConnect": "Let's connect",
+        "infoDesc": "Have a project in mind? Write to me."
     },
     "Portafolio": {
         "project": "My Projects",

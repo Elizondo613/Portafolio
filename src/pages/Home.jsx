@@ -1,65 +1,140 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import '../styles/Home.css';
 
 const Home = () => {
     const { t } = useTranslation();
+    const starsRef = useRef(null);
 
-    // Función para generar estrellas dinámicamente
-    const generateStars = () => {
-        const starsContainer = document.querySelector('.stars-container');
-        if (!starsContainer) return; // Asegurarse de que el contenedor exista
-
-        const numberOfStars = 50; // Número de estrellas a generar
-
-        for (let i = 0; i < numberOfStars; i++) {
-            const star = document.createElement('div');
-            star.classList.add('star');
-
-            // Posición aleatoria
-            const x = Math.random() * 100; // Posición horizontal (0% a 100%)
-            const y = Math.random() * 100; // Posición vertical (0% a 100%)
-
-            // Duración de la animación aleatoria
-            const duration = Math.random() * 2 + 1; // Entre 1 y 3 segundos
-
-            // Asignar estilos
-            star.style.left = `${x}%`;
-            star.style.top = `${y}%`;
-            star.style.animationDuration = `${duration}s`;
-
-            // Agregar la estrella al contenedor
-            starsContainer.appendChild(star);
-        }
-    };
-
-    // Usar useEffect para ejecutar el script después de que el componente se monte
     useEffect(() => {
-        generateStars();
-    }, []); // El array vacío asegura que esto solo se ejecute una vez
+        const container = starsRef.current;
+        if (!container) return;
+        container.innerHTML = '';
+        for (let i = 0; i < 80; i++) {
+            const point = document.createElement('div');
+            point.classList.add('point');
+            point.style.left = `${Math.random() * 100}%`;
+            point.style.top = `${Math.random() * 100}%`;
+            point.style.animationDuration = `${Math.random() * 3 + 1}s`;
+            point.style.animationDelay = `${Math.random() * 2}s`;
+            container.appendChild(point);
+        }
+    }, []);
+
+    const categories = [
+        {
+            key:      'games',
+            to:       '/games',
+            icon:     '🎮',
+            titleKey: 'home.categories.games.title',
+            descKey:  'home.categories.games.desc',
+        },
+        {
+            key:      'templates',
+            to:       '/templates',
+            icon:     '🎨',
+            titleKey: 'home.categories.templates.title',
+            descKey:  'home.categories.templates.desc',
+        },
+        {
+            key:      'portfolio',
+            to:       '/portfolio',
+            icon:     '💼',
+            titleKey: 'home.categories.portfolio.title',
+            descKey:  'home.categories.portfolio.desc',
+        },
+        {
+            key:      'about',
+            to:       '/about',
+            icon:     '👤',
+            titleKey: 'home.categories.about.title',
+            descKey:  'home.categories.about.desc',
+        },
+    ];
 
     return (
         <section id="home" className="home-section">
-            {/* Contenido principal */}
-            <div className="home-content">
-                <h1 className="title">
-                    <span className="greeting">{t('home.greeting')}</span>
-                    <span className="name">Javier Elizondo</span>
-                </h1>
-                <p className="subtitle">{t('home.profession')}</p>
-                <div className="cta-buttons">
-                    <a href="#portfolio" className="btn btn-primary">{t('home.buttons.projects')}</a>
-                    <a href="#contact" className="btn btn-secondary">{t('home.buttons.contact')}</a>
-                </div>
-            </div>
 
-            {/* Fondo con efectos */}
+            {/* ── Fondo ── */}
             <div className="home-background">
                 <div className="gradient-circle"></div>
                 <div className="gradient-circle-2"></div>
-                {/* Contenedor para las estrellas */}
-                <div className="stars-container"></div>
+                <div className="gradient-circle-3"></div>
+                <div className="stars-container" ref={starsRef}></div>
             </div>
+
+            {/* ── Hero ── */}
+            <div className="home-content">
+
+                {/* Badge de marca */}
+                <div className="brand-badge">
+                    <span className="brand-badge-dot"></span>
+                    {t('home.badge')}
+                </div>
+
+                <h1 className="home-title">
+                    <span className="home-title-studio">Kemet</span>
+                    <span className="home-title-accent">Studio</span>
+                </h1>
+
+                <p className="home-tagline">{t('home.tagline')}</p>
+                <p className="subtitle">{t('home.subtitle')}</p>
+
+                <div className="cta-buttons">
+                    <Link to="/portfolio" className="btn btn-primary">
+                        {t('home.buttons.projects')}
+                    </Link>
+                    <Link to="/contact" className="btn btn-secondary">
+                        {t('home.buttons.contact')}
+                    </Link>
+                </div>
+
+                {/* Métricas rápidas */}
+                <div className="home-metrics">
+                    <div className="home-metric">
+                        <span className="home-metric-number">4+</span>
+                        <span className="home-metric-label">{t('home.metrics.years')}</span>
+                    </div>
+                    <div className="home-metric-divider"></div>
+                    <div className="home-metric">
+                        <span className="home-metric-number">5+</span>
+                        <span className="home-metric-label">{t('home.metrics.games')}</span>
+                    </div>
+                    <div className="home-metric-divider"></div>
+                    <div className="home-metric">
+                        <span className="home-metric-number">5+</span>
+                        <span className="home-metric-label">{t('home.metrics.projects')}</span>
+                    </div>
+                    <div className="home-metric-divider"></div>
+                    <div className="home-metric">
+                        <span className="home-metric-number">3+</span>
+                        <span className="home-metric-label">{t('home.metrics.products')}</span>
+                    </div>
+                </div>
+            </div>
+
+            {/* ── Categorías ── */}
+            <div className="home-categories">
+                <p className="categories-eyebrow">{t('home.categories.eyebrow')}</p>
+                <h2 className="categories-title">{t('home.categories.title')}</h2>
+                <div className="categories-grid">
+                    {categories.map(({ key, to, icon, titleKey, descKey }, i) => (
+                        <Link
+                            to={to}
+                            key={key}
+                            className="category-card"
+                            style={{ animationDelay: `${i * 0.12}s` }}
+                        >
+                            <span className="category-icon">{icon}</span>
+                            <h3>{t(titleKey)}</h3>
+                            <p>{t(descKey)}</p>
+                            <span className="category-arrow">→</span>
+                        </Link>
+                    ))}
+                </div>
+            </div>
+
         </section>
     );
 };
