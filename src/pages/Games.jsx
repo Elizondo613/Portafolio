@@ -21,6 +21,12 @@ import img14 from '../assets/Space_runner.png';
 import img15 from '../assets/Space_runner2.png';
 import img16 from '../assets/Space_runner3.png';
 import img17 from '../assets/Space_runner4.png';
+import img18 from '../assets/Chess.png';
+import img19 from '../assets/Chess2.png';
+import img20 from '../assets/Chess3.png';
+import img21 from '../assets/Chess4.png';
+import img22 from '../assets/Chess5.png';
+import img23 from '../assets/Chess6.png';
 
 const GameRow = ({ game, index }) => {
     const [currentImage, setCurrentImage] = useState(0);
@@ -160,7 +166,15 @@ const GamesShowcase = () => {
             description: t('Games.descriptions.description5'),
             images: [img14, img15, img16, img17],
             link: 'https://elizondo613.github.io/Space_Race/',
-            tags: ['HTML5', 'CSS', 'JavaScript'],
+            tags: ['HTML5', 'CSS', 'JavaScript', 'Phaser'],
+            playLabel: t('Games.play'),
+        },
+        {
+            title: 'Chess Civilizations',
+            description: t('Games.descriptions.description6'),
+            images: [img18, img19, img20, img21, img22, img23],
+            link: 'https://chesscivilizations.netlify.app/',
+            tags: ['HTML5', 'CSS', 'JavaScript', 'Phaser'],
             playLabel: t('Games.play'),
         },
     ];
