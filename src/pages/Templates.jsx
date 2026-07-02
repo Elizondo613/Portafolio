@@ -5,7 +5,7 @@ import image1 from '../assets/PreviewImageAura.png';
 import image2 from '../assets/PreviewImageCyber.png';
 import image3 from '../assets/PreviewImageLumina.png';
 import image4 from '../assets/PreviewImageNext.png';
-import image5 from '../assets/PreviewImageNext.png';
+import image5 from '../assets/PreviewImageVortex.png';
 
 const Templates = () => {
     const [activeTab, setActiveTab] = useState('templates');

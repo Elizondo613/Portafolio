@@ -82,7 +82,7 @@ const About = () => {
         {
             title: t('About.education.cisco.title'),
             institution: 'Cisco Networking Academy',
-            period: '2024',
+            period: '2024 - presente',
             icon: '🌐',
         },
         {
