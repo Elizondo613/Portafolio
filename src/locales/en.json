@@ -147,7 +147,8 @@
             "description2": "Interactive multiplayer game for the board game Casa de Leyendas",
             "description3": "Lottery roulette game Las Leyendas",
             "description4": "Inventory management for the liquor store “Buffalo Licores”.",
-            "description5": "Cinema billboard platform with updated movie information and showtimes for reservations"
+            "description5": "Cinema billboard platform with updated movie information and showtimes for reservations",
+            "description6": "Source code compiler with graphical interface including flowchart, code editor and output console, built with C++ input and output translations for Python, Java, Assembly and C. Includes a step-by-step debugging system and syntax highlighting, tokens and keywords. Also includes the download of the translated files and an executable."
         }
     },
     "Games": {

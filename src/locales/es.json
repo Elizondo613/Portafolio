@@ -147,7 +147,8 @@
             "description2": "Juego interactivo multijugador para el juego de mesa Casa de Leyendas",
             "description3": "Juego de ruleta Lotería Las Leyendas",
             "description4": "Manejo de inventario para la licorería Buffalo Licores",
-            "description5": "Plataforma de cartelera de cine con información actualizada de películas y horarios para reservas"
+            "description5": "Plataforma de cartelera de cine con información actualizada de películas y horarios para reservas",
+            "description6": "Compilador de código fuente con interfaz gráfica con diagrama de flujo, editor de código y consola de salida, construido con entrada de C++ y salida con traducciones para Python, Java, Ensamblador y C. Incluye un sistema de depuración paso a paso y resaltado de sintaxis, tokens y palabras clave. Además de contar con la descarga de los archivos traducidos y un ejecutable."
         }
     },
     "Games": {

@@ -23,6 +23,10 @@ import img16 from '../assets/ScreenCinema.png';
 import img17 from '../assets/ScreenCinema2.png';
 import img18 from '../assets/ScreenCinema3.png';
 import img19 from '../assets/ScreenCinema4.png';
+import img20 from '../assets/Compilador.png';
+import img21 from '../assets/Compilador2.png';
+import img22 from '../assets/Compilador3.png';
+import img23 from '../assets/Compilador4.png';
 
 const ProjectRow = ({ project, index }) => {
     const [currentImage, setCurrentImage] = useState(0);
@@ -143,6 +147,12 @@ const Portafolio = () => {
             images: [img16, img17, img18, img19],
             tags: ['React', 'Vite', 'CSS3', 'Firebase'],
         },
+        {
+            title: 'Compilador',
+            description: t('Portafolio.descriptions.description6'),
+            images: [img20, img21, img22, img23],
+            tags: ['Python', 'C++', 'Qt'],
+        }
     ];
 
     return (
