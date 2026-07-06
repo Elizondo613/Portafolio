@@ -27,6 +27,12 @@ import img20 from '../assets/Chess3.png';
 import img21 from '../assets/Chess4.png';
 import img22 from '../assets/Chess5.png';
 import img23 from '../assets/Chess6.png';
+import img24 from '../assets/Xibal.png';
+import img25 from '../assets/Xibal2.png';
+import img26 from '../assets/Xibal3.png';
+import img27 from '../assets/Xibal4.png';
+import img28 from '../assets/Xibal5.png';
+import img29 from '../assets/Xibal6.png';
 
 const GameRow = ({ game, index }) => {
     const [currentImage, setCurrentImage] = useState(0);
@@ -174,7 +180,15 @@ const GamesShowcase = () => {
             description: t('Games.descriptions.description6'),
             images: [img18, img19, img20, img21, img22, img23],
             link: 'https://chesscivilizations.netlify.app/',
-            tags: ['HTML5', 'CSS', 'JavaScript', 'Phaser'],
+            tags: ['React', 'HTML5', 'CSS', 'TypeScript', 'Phaser'],
+            playLabel: t('Games.play'),
+        },
+        {
+            title: 'Xibalba Survivors',
+            description: t('Games.descriptions.description7'),
+            images: [img24, img25, img26, img27, img28, img29],
+            link: 'https://xibalba-survivors.netlify.app/',
+            tags: ['React', 'Vite', 'TypeScript', 'Phaser 3', 'Tailwind CSS', 'Zustand', 'Web Audio API'],
             playLabel: t('Games.play'),
         },
     ];
