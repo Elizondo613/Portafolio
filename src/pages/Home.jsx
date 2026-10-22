@@ -31,6 +31,13 @@ const Home = () => {
             descKey:  'home.categories.games.desc',
         },
         {
+            key:      'workshop',
+            to:       '/workshop',
+            icon:     '🛠️',
+            titleKey: 'home.categories.workshop.title',
+            descKey:  'home.categories.workshop.desc',
+        },
+        {
             key:      'templates',
             to:       '/templates',
             icon:     '🎨',
@@ -98,7 +105,7 @@ const Home = () => {
                     </div>
                     <div className="home-metric-divider"></div>
                     <div className="home-metric">
-                        <span className="home-metric-number">5+</span>
+                        <span className="home-metric-number">7+</span>
                         <span className="home-metric-label">{t('home.metrics.games')}</span>
                     </div>
                     <div className="home-metric-divider"></div>
@@ -108,7 +115,7 @@ const Home = () => {
                     </div>
                     <div className="home-metric-divider"></div>
                     <div className="home-metric">
-                        <span className="home-metric-number">3+</span>
+                        <span className="home-metric-number">5+</span>
                         <span className="home-metric-label">{t('home.metrics.products')}</span>
                     </div>
                 </div>

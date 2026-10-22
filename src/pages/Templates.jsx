@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import '../styles/Templates.css';
 import image1 from '../assets/PreviewImageAura.png';
@@ -8,7 +8,6 @@ import image4 from '../assets/PreviewImageNext.png';
 import image5 from '../assets/PreviewImageVortex.png';
 
 const Templates = () => {
-    const [activeTab, setActiveTab] = useState('templates');
     const { t } = useTranslation();
     const starsRef = useRef(null);
 
@@ -75,20 +74,7 @@ const Templates = () => {
         },
     ];
 
-    // Aquí irás agregando tus scripts reales
-    const scripts = [
-        {
-            id: 1,
-            title: 'Script Ejemplo',
-            description: t('Templates.items.scriptExample.desc'),
-            preview: null,
-            tags: ['JavaScript'],
-            price: '$4.99',
-            link: 'https://payhip.com/CodeXela',
-        },
-    ];
-
-    const items = activeTab === 'templates' ? templates : scripts;
+    const items = templates;
 
     return (
         <section className="templates-section">
@@ -97,22 +83,6 @@ const Templates = () => {
             <div className="container">
                 <h2 className="section-title">{t('Templates.title')}</h2>
                 <p className="templates-subtitle">{t('Templates.subtitle')}</p>
-
-                {/* Tabs */}
-                <div className="templates-tabs">
-                    <button
-                        className={`tab-btn ${activeTab === 'templates' ? 'active' : ''}`}
-                        onClick={() => setActiveTab('templates')}
-                    >
-                        🎨 {t('Templates.tabs.templates')}
-                    </button>
-                    <button
-                        className={`tab-btn ${activeTab === 'scripts' ? 'active' : ''}`}
-                        onClick={() => setActiveTab('scripts')}
-                    >
-                        ⚡ {t('Templates.tabs.scripts')}
-                    </button>
-                </div>
 
                 {/* Grid de cards */}
                 <div className="templates-grid">
@@ -127,7 +97,7 @@ const Templates = () => {
                                 {item.preview
                                     ? <img src={item.preview} alt={item.title} />
                                     : <div className="template-preview-placeholder">
-                                        {activeTab === 'templates' ? '🎨' : '⚡'}
+                                        🎨
                                       </div>
                                 }
                             </div>

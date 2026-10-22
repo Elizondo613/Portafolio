@@ -1,0 +1,100 @@
+/* Workshop reutiliza el layout de Templates.css; aquí solo lo propio */
+
+.workshop-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    margin: -1rem auto 2.5rem;
+}
+
+.workshop-stat-number {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.workshop-stat-label {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    letter-spacing: 0.02em;
+}
+
+/* Wallpapers lucen mejor en 16:9 */
+.workshop-preview {
+    position: relative;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+
+.workshop-badge {
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: white;
+    background: var(--gradient-primary);
+    box-shadow: 0 4px 14px rgba(74, 58, 255, 0.35);
+}
+
+.template-footer .btn i {
+    margin-right: 0.35rem;
+}
+
+/* Card "Ver todo en Steam" */
+.workshop-cta-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.6rem;
+    padding: 2.5rem 1.5rem;
+    min-height: 260px;
+    text-decoration: none;
+    border-style: dashed;
+}
+
+.workshop-cta-icon {
+    font-size: 2.75rem;
+    color: var(--accent);
+}
+
+.workshop-cta-card h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text);
+    margin: 0;
+}
+
+.workshop-cta-card p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin: 0;
+    max-width: 260px;
+}
+
+.workshop-cta-arrow {
+    color: var(--accent);
+    font-size: 1.25rem;
+    transition: transform 0.3s ease;
+}
+
+.workshop-cta-card:hover .workshop-cta-arrow {
+    transform: translateX(4px);
+}
+
+@media (max-width: 768px) {
+    .workshop-section .tab-btn {
+        width: 220px;
+        padding-inline: 1rem;
+        white-space: nowrap;
+    }
+}

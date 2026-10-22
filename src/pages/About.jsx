@@ -22,6 +22,11 @@ const About = () => {
 
     const skillCategories = [
         {
+            category: t('About.skills.gamedev'),
+            icon: '🎮',
+            skills: ['Phaser', 'JavaScript Canvas', 'React + TypeScript', 'Pixel Art 2D', 'Wallpaper Engine', 'Steam Workshop', 'Source 2 / Hammer', 'Firebase']
+        },
+        {
             category: 'Frontend',
             icon: '🎨',
             skills: ['React', 'Vite', 'TypeScript', 'Next.js', 'Tailwind CSS', 'ShadCN/UI', 'HTML', 'CSS']
@@ -32,36 +37,31 @@ const About = () => {
             skills: ['Django REST Framework', 'Node.js', 'Express', 'PHP', 'Python', 'PostgreSQL', 'MongoDB', 'Firebase']
         },
         {
-            category: t('About.skills.gamedev'),
-            icon: '🎮',
-            skills: ['JavaScript Canvas', 'Phaser', 'Firebase', 'Pixel Art 2D', 'React + TypeScript']
-        },
-        {
             category: t('About.skills.cybersec'),
             icon: '🔐',
-            skills: ['Auditoría de vulnerabilidades', 'Hacking Ético', 'BeEF', 'SET', 'Cisco Networking', 'Kali Linux']
+            skills: [t('About.skills.ethicalHacking'), t('About.skills.vulnAudit'), 'CTF', 'Kali Linux', 'Cisco Networking', 'Packet Tracer', 'BeEF', 'SET']
         },
         {
             category: 'Tools',
             icon: '🛠️',
-            skills: ['Git / GitHub', 'Docker', 'Netlify', 'Linux', 'Metodologías Ágiles']
+            skills: ['Git / GitHub', 'Docker', 'Netlify', 'Linux', t('About.skills.agile')]
         },
     ];
 
     const experience = [
         {
-            role: t('About.experience.erp.role'),
-            company: 'Asociación CDRO / URL',
-            period: '2025 – Presente',
-            desc: t('About.experience.erp.desc'),
-            tags: ['Django REST', 'PostgreSQL', 'React', 'Docker'],
+            role: t('About.experience.kemet.role'),
+            company: 'Kemet Studio',
+            period: t('About.experience.kemet.period'),
+            desc: t('About.experience.kemet.desc'),
+            tags: ['Phaser', 'JavaScript Canvas', 'React', 'Wallpaper Engine', 'Steam Workshop'],
         },
         {
-            role: t('About.experience.buffalo.role'),
-            company: 'Buffalo Licores / Licores Don Roca',
-            period: '2023 – 2024',
-            desc: t('About.experience.buffalo.desc'),
-            tags: ['Node.js', 'PHP', 'MongoDB'],
+            role: t('About.experience.erp.role'),
+            company: 'Asociación CDRO / URL',
+            period: t('About.experience.erp.period'),
+            desc: t('About.experience.erp.desc'),
+            tags: ['Django REST', 'PostgreSQL', 'React', 'Docker'],
         },
         {
             role: t('About.experience.casaleyendas.role'),
@@ -70,26 +70,71 @@ const About = () => {
             desc: t('About.experience.casaleyendas.desc'),
             tags: ['React', 'Firebase', 'MongoDB', 'Node.js'],
         },
+        {
+            role: t('About.experience.buffalo.role'),
+            company: 'Buffalo Licores / Licores Don Roca',
+            period: '2023 – 2024',
+            desc: t('About.experience.buffalo.desc'),
+            tags: ['Node.js', 'PHP', 'MongoDB'],
+        },
     ];
+
+    const CREDLY_URL = 'https://www.credly.com/users/jose-javier-elizondo-mendoza';
 
     const education = [
         {
-            title: 'Certified in Cybersecurity (CC)',
-            institution: 'ISC2',
-            period: t('About.education.isc2.period'),
+            title: t('About.education.university.title'),
+            institution: 'Universidad Rafael Landívar',
+            period: t('About.education.inProgress'),
+            icon: '🎓',
+        },
+        {
+            title: 'Ethical Hacker',
+            institution: t('About.education.ethicalHacker.institution'),
+            period: '2026',
+            icon: '🛡️',
+        },
+        {
+            title: 'Introduction to Cybersecurity',
+            institution: 'Cisco Networking Academy',
+            period: '2025',
             icon: '🔐',
         },
         {
-            title: t('About.education.cisco.title'),
+            title: 'Networking Basics · Packet Tracer',
             institution: 'Cisco Networking Academy',
-            period: '2024 - presente',
+            period: '2026',
             icon: '🌐',
+        },
+        {
+            title: 'JavaScript Essentials 1 & 2',
+            institution: 'Cisco Networking Academy',
+            period: '2026',
+            icon: '⚡',
+        },
+        {
+            title: 'HTML & CSS Essentials',
+            institution: 'Cisco Networking Academy',
+            period: '2026',
+            icon: '💻',
+        },
+        {
+            title: t('About.education.ai.title'),
+            institution: 'Cisco Networking Academy',
+            period: '2026',
+            icon: '🤖',
+        },
+        {
+            title: 'Certified in Cybersecurity (CC)',
+            institution: 'ISC2',
+            period: t('About.education.inProgress'),
+            icon: '📜',
         },
         {
             title: t('About.education.platzi.title'),
             institution: 'Platzi',
-            period: '2022 – Presente',
-            icon: '💻',
+            period: `2022 – ${t('About.present')}`,
+            icon: '🧩',
         },
     ];
 
@@ -115,11 +160,11 @@ const About = () => {
                             <span className="stat-label">{t('About.stats.projects')}</span>
                         </div>
                         <div className="stat-card">
-                            <span className="stat-number">5+</span>
+                            <span className="stat-number">7+</span>
                             <span className="stat-label">{t('About.stats.games')}</span>
                         </div>
                         <div className="stat-card">
-                            <span className="stat-number">3+</span>
+                            <span className="stat-number">5+</span>
                             <span className="stat-label">{t('About.stats.products')}</span>
                         </div>
                     </div>
@@ -184,6 +229,16 @@ const About = () => {
                                 </div>
                             </div>
                         ))}
+                    </div>
+                    <div className="credly-cta">
+                        <a
+                            href={CREDLY_URL}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn btn-secondary"
+                        >
+                            {t('About.education.credly')} ↗
+                        </a>
                     </div>
                 </div>
 

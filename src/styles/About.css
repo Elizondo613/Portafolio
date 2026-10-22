@@ -309,6 +309,13 @@
     color: var(--text-secondary);
 }
 
+/* ── Credly ── */
+.credly-cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
 /* ── Shared ── */
 .section-title {
     font-size: 2.5rem;
