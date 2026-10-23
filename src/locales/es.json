@@ -109,10 +109,15 @@
         },
         "experience": {
             "title": "Experiencia",
+            "antigua": {
+                "role": "Desarrollador WordPress y E-commerce",
+                "period": "Ago 2026 – Presente",
+                "desc": "Desarrollo desde cero de los themes a medida de antiguatours.net y de la plataforma de micrositios de bodas de Antigua Tours Weddings, con reservas de tours y traslados. Integración y administración de pagos con WooCommerce y Stripe en producción (3D Secure, reembolsos, webhooks), formularios de reserva con validaciones propias y catálogo de más de 28 tours editable sin tocar código."
+            },
             "erp": {
                 "role": "Líder Módulo de Facturación — ERP CDRO",
                 "desc": "Líder del módulo de Facturación en un sistema institucional para cliente real. Implementación completa de arquitectura backend y routing RESTful.",
-                "period": "2025 – Presente"
+                "period": "2026"
             },
             "buffalo": {
                 "role": "Desarrollador de Inventarios",

@@ -34,7 +34,7 @@ const About = () => {
         {
             category: 'Backend',
             icon: '⚙️',
-            skills: ['Django REST Framework', 'Node.js', 'Express', 'PHP', 'Python', 'PostgreSQL', 'MongoDB', 'Firebase']
+            skills: ['Django REST Framework', 'Node.js', 'Express', 'PHP', 'Python', 'WordPress / WooCommerce', 'Stripe', 'PostgreSQL', 'MongoDB', 'Firebase']
         },
         {
             category: t('About.skills.cybersec'),
@@ -55,6 +55,13 @@ const About = () => {
             period: t('About.experience.kemet.period'),
             desc: t('About.experience.kemet.desc'),
             tags: ['Phaser', 'JavaScript Canvas', 'React', 'Wallpaper Engine', 'Steam Workshop'],
+        },
+        {
+            role: t('About.experience.antigua.role'),
+            company: 'Antigua Tours by Elizabeth Bell',
+            period: t('About.experience.antigua.period'),
+            desc: t('About.experience.antigua.desc'),
+            tags: ['WordPress', 'WooCommerce', 'Stripe', 'PHP', 'JavaScript'],
         },
         {
             role: t('About.experience.erp.role'),

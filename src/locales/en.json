@@ -109,10 +109,15 @@
         },
         "experience": {
             "title": "Experience",
+            "antigua": {
+                "role": "WordPress & E-commerce Developer",
+                "period": "Aug 2026 – Present",
+                "desc": "Built from scratch the custom themes for antiguatours.net and the Antigua Tours Weddings microsite platform, with tour and transfer bookings. Integrated and manage production payments with WooCommerce and Stripe (3D Secure, refunds, webhooks), custom-validated booking forms, and a 28+ tour catalog editable without touching code."
+            },
             "erp": {
                 "role": "Billing Module Lead — ERP CDRO",
                 "desc": "Led the Billing module in an institutional system for a real client. Full backend architecture and RESTful routing implementation.",
-                "period": "2025 – Present"
+                "period": "2026"
             },
             "buffalo": {
                 "role": "Inventory Developer",
