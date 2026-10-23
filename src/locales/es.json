@@ -1,7 +1,7 @@
 {
     "home": {
         "greeting": "¡Bienvenido! Mi nombre es",
-        "profession": "Desarrollador web especializado en frontend, apasionado por transformar ideas en experiencias interactivas.",
+        "profession": "Desarrollador de videojuegos y full-stack, creando juegos indie y contenido para la comunidad desde Guatemala.",
         "buttons": {
             "projects": "Ver Proyectos",
             "contact": "Contactar"
@@ -24,11 +24,15 @@
             "about": {
                 "title": "Sobre mí",
                 "desc": "Conoce más sobre quién soy"
+            },
+            "workshop": {
+                "title": "Workshop",
+                "desc": "Wallpapers y mapas para Steam"
             }
         },
-        "badge": "Estudio de desarrollo digital",
-        "tagline": "Games · Templates · Full-Stack Dev",
-        "subtitle": "Construimos experiencias digitales que trascienden — videojuegos, herramientas y software a medida desde Guatemala para el mundo.",
+        "badge": "Estudio indie de videojuegos y desarrollo",
+        "tagline": "Games · Workshop · Templates · Full-Stack Dev",
+        "subtitle": "Creamos videojuegos, contenido para la comunidad de Steam y software a medida, desde Guatemala para el mundo.",
         "metrics": {
             "years": "Años de exp.",
             "games": "Videojuegos",
@@ -43,47 +47,53 @@
             "portfolio": "Portafolio",
             "contact": "Contacto",
             "games": "Juegos",
-            "templates": "Templates"
+            "templates": "Templates",
+            "workshop": "Workshop"
         }
     },
     "LanguageSwitcher": {
         "language": "Idioma"
     },
     "Footer": {
-        "slogan": "Construyendo sistemas seguros y experiencias interactivas excepcionales",
+        "slogan": "Videojuegos, contenido para la comunidad y software seguro, hechos en Guatemala",
         "links": {
             "start": "Inicio",
             "about": "Sobre mí",
             "portfolio": "Portafolio",
             "contact": "Contacto",
             "games": "Juegos",
-            "templates": "Templates"
+            "templates": "Templates",
+            "workshop": "Workshop"
         },
         "follow": "Sígueme en:",
         "copy": "Todos los derechos reservados."
     },
     "Templates": {
         "title": "Mis Productos",
-        "subtitle": "Templates y scripts listos para usar",
-        "tabs": { "templates": "Templates", "scripts": "Scripts" },
+        "subtitle": "Templates listos para usar",
         "buy": "Comprar",
         "items": {
-            "example": { "desc": "Aura es una template de enlaces bio premium, una alternativa autohospedada a Linktree. Construida completamente con HTML, CSS y JavaScript vanilla sin dependencias de librerías" },
-            "scriptExample": { "desc": "Descripción del script" },
-            "example2": { "desc2": "CyberSafe es una template HTML oscura premium para empresas de ciberseguridad, servicios VPN, startups de IT y productos SaaS de seguridad. Construida con HTML, CSS y JavaScript puro" },
-            "scriptExample2": { "desc2": "Descripción del script" },
-            "example3": { "desc3": "Lumina AI es una template HTML de modo claro premium construida para productos SaaS impulsados por IA, herramientas para desarrolladores y startups de micro-SaaS." },
-            "scriptExample3": { "desc3": "Descripción del script" },
-            "example4": { "desc4": "NexVault es una template HTML de modo oscuro premium construida para billeteras de criptomonedas, plataformas DeFi y productos fintech." },
-            "scriptExample4": { "desc4": "Descripción del script" },
-            "example5": { "desc5": "Vortex es una template HTML oscura premium construida para equipos profesionales de esports, organizaciones de gaming, streamers y creadores de contenido." },
-            "scriptExample5": { "desc5": "Descripción del script" }
+            "example": {
+                "desc": "Aura es una template de enlaces bio premium, una alternativa autohospedada a Linktree. Construida completamente con HTML, CSS y JavaScript vanilla sin dependencias de librerías"
+            },
+            "example2": {
+                "desc2": "CyberSafe es una template HTML oscura premium para empresas de ciberseguridad, servicios VPN, startups de IT y productos SaaS de seguridad. Construida con HTML, CSS y JavaScript puro"
+            },
+            "example3": {
+                "desc3": "Lumina AI es una template HTML de modo claro premium construida para productos SaaS impulsados por IA, herramientas para desarrolladores y startups de micro-SaaS."
+            },
+            "example4": {
+                "desc4": "NexVault es una template HTML de modo oscuro premium construida para billeteras de criptomonedas, plataformas DeFi y productos fintech."
+            },
+            "example5": {
+                "desc5": "Vortex es una template HTML oscura premium construida para equipos profesionales de esports, organizaciones de gaming, streamers y creadores de contenido."
+            }
         }
     },
     "About": {
         "about": "Sobre mí",
         "technology": "Tecnologías",
-        "description": "Desarrollador Full-Stack y de Videojuegos con más de 4 años de experiencia creando productos digitales de alto impacto. Especialista en construir interfaces interactivas, sistemas backend robustos y arquitectura segura. Mi enfoque combina el desarrollo ágil con una mentalidad de Ciberseguridad Ofensiva, garantizando soluciones funcionales y protegidas.",
+        "description": "Desarrollador de videojuegos y full-stack con más de 4 años de experiencia, fundador de Kemet Studio. Creo juegos para web, contenido para la comunidad de Steam (mis fondos de pantalla para Wallpaper Engine ya suman más de 80 suscripciones orgánicas) y software a medida para clientes reales. Complemento el desarrollo con formación en ciberseguridad ofensiva, incluyendo la certificación Ethical Hacker de Cisco y competencias CTF, para construir productos funcionales y seguros.",
         "stats": {
             "years": "Años de experiencia",
             "projects": "Proyectos",
@@ -92,13 +102,22 @@
         },
         "skills": {
             "gamedev": "Gamedev",
-            "cybersec": "Ciberseguridad"
+            "cybersec": "Ciberseguridad",
+            "ethicalHacking": "Hacking Ético",
+            "vulnAudit": "Auditoría de vulnerabilidades",
+            "agile": "Metodologías Ágiles"
         },
         "experience": {
             "title": "Experiencia",
+            "antigua": {
+                "role": "Desarrollador WordPress y E-commerce",
+                "period": "Ago 2026 – Presente",
+                "desc": "Desarrollo desde cero de los themes a medida de antiguatours.net y de la plataforma de micrositios de bodas de Antigua Tours Weddings, con reservas de tours y traslados. Integración y administración de pagos con WooCommerce y Stripe en producción (3D Secure, reembolsos, webhooks), formularios de reserva con validaciones propias y catálogo de más de 28 tours editable sin tocar código."
+            },
             "erp": {
                 "role": "Líder Módulo de Facturación — ERP CDRO",
-                "desc": "Líder del módulo de Facturación en un sistema institucional para cliente real. Implementación completa de arquitectura backend y routing RESTful."
+                "desc": "Líder del módulo de Facturación en un sistema institucional para cliente real. Implementación completa de arquitectura backend y routing RESTful.",
+                "period": "2026"
             },
             "buffalo": {
                 "role": "Desarrollador de Inventarios",
@@ -107,20 +126,31 @@
             "casaleyendas": {
                 "role": "Desarrollador de Videojuegos",
                 "desc": "Coordinación técnica para la app móvil Casa de Leyendas, implementando mecánicas multijugador."
+            },
+            "kemet": {
+                "role": "Fundador y Desarrollador de Videojuegos",
+                "period": "2022 – Presente",
+                "desc": "Diseño, desarrollo y publicación de videojuegos web propios (roguelike, ajedrez multijugador, arcade y simulación). Creación de contenido para Steam Workshop: fondos de pantalla con más de 80 suscripciones orgánicas y mapas personalizados para Counter-Strike 2."
             }
         },
         "education": {
             "title": "Educación y Certificaciones",
-            "isc2": {
-                "period": "En proceso"
-            },
-            "cisco": {
-                "title": "Ciberseguridad y Redes"
-            },
             "platzi": {
                 "title": "React y Desarrollo Full-Stack"
-            }
-        }
+            },
+            "inProgress": "En curso",
+            "university": {
+                "title": "Licenciatura en Informática y Sistemas"
+            },
+            "ethicalHacker": {
+                "institution": "Cisco NetAcad · #CyberGames CTF"
+            },
+            "ai": {
+                "title": "Introducción a la IA moderna"
+            },
+            "credly": "Ver credenciales verificadas en Credly"
+        },
+        "present": "Presente"
     },
     "Contact": {
         "contact": "Contacto",
@@ -164,5 +194,25 @@
             "description7": "Rougelike de acción estilo Vampire Survivors, ambientado en el inframundo maya. Sobrevive 5 minutos a oleadas crecientes de murciélagos de Camazotz, jaguarez espectrales y guerreros esqueléticos, sube de nivel, elige poderes ancestrales y enfréntate a Camazotz, Señor Murciélago."
         },
         "play": "Jugar"
+    },
+    "Workshop": {
+        "title": "Workshop",
+        "subtitle": "Fondos de pantalla para Wallpaper Engine, mapas y mods que comparto con la comunidad de Steam",
+        "subscribers": "suscripciones en Steam Workshop",
+        "tabs": {
+            "wallpapers": "Wallpapers",
+            "mods": "Mapas y Mods"
+        },
+        "subscribe": "Suscribirse",
+        "wip": "En desarrollo",
+        "viewAll": "Ver todo en Steam",
+        "viewAllWallpapers": "Todos mis fondos de pantalla en el Workshop de Wallpaper Engine",
+        "viewAllMods": "Mis mapas y mods publicados en el Workshop de Counter-Strike 2",
+        "items": {
+            "cs2Christmas": {
+                "title": "Mapa navideño para CS2",
+                "desc": "Mapa personalizado con temática navideña y un modo de juego propio para partidas entre amigos, construido en Source 2."
+            }
+        }
     }
 }

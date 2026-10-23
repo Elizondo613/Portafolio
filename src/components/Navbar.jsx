@@ -25,6 +25,7 @@ const Navbar = () => {
     const links = [
         { to: '/',          label: t('Navbar.links.start') },
         { to: '/games',     label: t('Navbar.links.games') },
+        { to: '/workshop',  label: t('Navbar.links.workshop') },
         { to: '/templates', label: t('Navbar.links.templates') },
         { to: '/portfolio', label: t('Navbar.links.portfolio') },
         { to: '/about',     label: t('Navbar.links.about') },
