@@ -5,6 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import ScrollToTop from './components/ScrollToTop';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Seo from './components/Seo';
 
 import Home from './pages/Home';
 import About from './pages/About';
@@ -13,11 +14,13 @@ import Contact from './pages/Contact';
 import Games from './pages/Games';
 import Templates from './pages/Templates';
 import Workshop from './pages/Workshop';
+import NotFound from './pages/NotFound';
 
 const App = () => {
   return (
     <div className="app-container">
       <ScrollToTop />
+      <Seo />
       <Navbar />
       <main>
         <Routes>
@@ -28,6 +31,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/templates" element={<Templates />} />
           <Route path="/workshop" element={<Workshop />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <Footer />

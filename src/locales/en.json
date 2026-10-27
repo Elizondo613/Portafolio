@@ -203,7 +203,6 @@
             "wallpapers": "Wallpapers",
             "mods": "Maps & Mods"
         },
-        "subscribe": "Subscribe",
         "wip": "In development",
         "viewAll": "View all on Steam",
         "viewAllWallpapers": "All my wallpapers on the Wallpaper Engine Workshop",
@@ -212,12 +211,74 @@
             "cs2Christmas": {
                 "title": "Christmas map for CS2",
                 "desc": "Custom Christmas-themed map with its own game mode for matches with friends, built in Source 2."
+            },
+            "mando": {
+                "title": "Joint Command · Kemet Sector",
+                "desc": "Tactical command center with a live world map, radar, radio intercepts, zone weather and DEFCON level."
+            },
+            "reloj": {
+                "title": "Arcane Clock",
+                "desc": "Rune-covered magic circle with an audio visualizer that reacts to your music, plus the time and date at its core."
+            },
+            "grimorio": {
+                "title": "The Scribe's Grimoire",
+                "desc": "Alchemist's desk with a rune book, potions, a compass and animated candles."
+            },
+            "brote": {
+                "title": "Global Outbreak Tracker",
+                "desc": "Crisis terminal with a world map, real-time infection hotspots and news broadcasts."
+            },
+            "nexus": {
+                "title": "Nexus Labs · Subject Monitoring",
+                "desc": "Lab dashboard with live biometric scans, neural analysis and genomic sequencing."
             }
-        }
+        },
+        "viewOnSteam": "View on Steam"
     },
     "Support": {
         "title": "Enjoying my work?",
         "desc": "If my wallpapers, maps or games were useful to you, you can buy me a coffee on Ko-fi. Every bit helps me keep making free content for the community.",
         "button": "Support me on Ko-fi"
+    },
+    "Seo": {
+        "pages": {
+            "home": {
+                "title": "Kemet Studio | Indie games & full-stack development",
+                "description": "Kemet Studio: indie studio from Guatemala. Web games, Steam Workshop wallpapers and maps, premium templates and custom full-stack development."
+            },
+            "games": {
+                "title": "Games",
+                "description": "Play Kemet Studio web games for free: Xibalba, Chess Civilizations, Pixel Farmer, Space Runner and more, made in Guatemala."
+            },
+            "workshop": {
+                "title": "Steam Workshop",
+                "description": "Wallpaper Engine backgrounds, plus Counter-Strike 2 maps and mods made by Kemet Studio for the Steam community."
+            },
+            "templates": {
+                "title": "Premium templates",
+                "description": "Ready-to-use premium HTML templates: bio-link, cybersecurity, AI SaaS, fintech and esports. Clean code, zero dependencies."
+            },
+            "portfolio": {
+                "title": "Portfolio",
+                "description": "Web development and custom software projects by Javier Elizondo: Stripe e-commerce, ERP, booking platforms and inventory systems."
+            },
+            "about": {
+                "title": "About me",
+                "description": "Javier Elizondo, game and full-stack developer with 5 years of experience, founder of Kemet Studio and Cisco-certified in cybersecurity."
+            },
+            "contact": {
+                "title": "Contact",
+                "description": "Have a game, web or custom software project? Message me on WhatsApp and I will reply within 24 hours."
+            },
+            "notFound": {
+                "title": "Page not found",
+                "description": "The page you are looking for does not exist."
+            }
+        }
+    },
+    "NotFound": {
+        "title": "404",
+        "text": "This page got lost in the underworld.",
+        "button": "Back to home"
     }
 }
