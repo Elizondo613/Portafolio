@@ -95,7 +95,7 @@ const Templates = () => {
                             {/* Preview imagen */}
                             <div className="template-preview">
                                 {item.preview
-                                    ? <img src={item.preview} alt={item.title} />
+                                    ? <img src={item.preview} alt={item.title} loading="lazy" decoding="async" />
                                     : <div className="template-preview-placeholder">
                                         🎨
                                       </div>
