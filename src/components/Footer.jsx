@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import '../styles/Footer.css';
 import Logo from '../assets/LogoKemet.jpg';
 import { useTranslation } from 'react-i18next';
+import { KOFI_URL } from '../data/support';
 
 const Footer = () => {
     const [showScrollTop, setShowScrollTop] = useState(false);
@@ -58,6 +59,11 @@ const Footer = () => {
                             <a href="https://www.youtube.com/channel/UCGaMiA00t_fUEQvE-D8cozA" target="_blank" rel="noopener noreferrer">
                                 <i className="fab fa-youtube"></i>
                             </a>
+                            {KOFI_URL && (
+                                <a href={KOFI_URL} target="_blank" rel="noopener noreferrer" title="Ko-fi" aria-label="Ko-fi">
+                                    <i className="fas fa-mug-hot"></i>
+                                </a>
+                            )}
                         </div>
                     </div>
                 </div>

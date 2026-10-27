@@ -100,7 +100,7 @@ const Home = () => {
                 {/* Métricas rápidas */}
                 <div className="home-metrics">
                     <div className="home-metric">
-                        <span className="home-metric-number">4+</span>
+                        <span className="home-metric-number">5+</span>
                         <span className="home-metric-label">{t('home.metrics.years')}</span>
                     </div>
                     <div className="home-metric-divider"></div>
