@@ -4,6 +4,12 @@
 //  (sharedfiles/filedetails/?id=...) y la imagen en src/assets/workshop/
 // ─────────────────────────────────────────────────────────────
 
+import brote from '../assets/workshop/brote-global.webp';
+import nexus from '../assets/workshop/nexus-labs.webp';
+import mando from '../assets/workshop/mando-conjunto.webp';
+import grimorio from '../assets/workshop/grimorio-escriba.webp';
+import reloj from '../assets/workshop/reloj-arcano.webp';
+
 export const STEAM_PROFILE = 'https://steamcommunity.com/profiles/76561198410903687';
 
 // Wallpaper Engine (appid 431960)
@@ -22,7 +28,19 @@ export const TOTAL_SUBSCRIBERS = '80+';
 //     link: 'https://steamcommunity.com/sharedfiles/filedetails/?id=...',
 //     tags: ['Animado', '4K'],
 // }
-export const wallpapers = [];
+// Todos enlazan a la página principal de tus wallpapers en el Workshop.
+// Si luego quieres que uno abra su propia página, cambia su `link`.
+export const wallpapers = [
+    { id: 'mando-conjunto',   key: 'mando',    preview: mando,    link: WORKSHOP_WALLPAPERS_URL, tags: ['Sci-Fi', 'HUD', 'Animado'] },
+    { id: 'reloj-arcano',     key: 'reloj',    preview: reloj,    link: WORKSHOP_WALLPAPERS_URL, tags: ['Fantasía', 'Reloj', 'Audio'] },
+    { id: 'grimorio-escriba', key: 'grimorio', preview: grimorio, link: WORKSHOP_WALLPAPERS_URL, tags: ['Fantasía', 'Medieval', 'Animado'] },
+    { id: 'brote-global',     key: 'brote',    preview: brote,    link: WORKSHOP_WALLPAPERS_URL, tags: ['Sci-Fi', 'Mapa', 'Reloj'] },
+    { id: 'nexus-labs',       key: 'nexus',    preview: nexus,    link: WORKSHOP_WALLPAPERS_URL, tags: ['Sci-Fi', 'Laboratorio', 'Animado'] },
+].map(w => ({
+    ...w,
+    titleKey: `Workshop.items.${w.key}.title`,
+    descKey: `Workshop.items.${w.key}.desc`,
+}));
 
 // status: 'published' | 'wip'
 export const mods = [

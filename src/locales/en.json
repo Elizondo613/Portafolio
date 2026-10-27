@@ -203,7 +203,6 @@
             "wallpapers": "Wallpapers",
             "mods": "Maps & Mods"
         },
-        "subscribe": "Subscribe",
         "wip": "In development",
         "viewAll": "View all on Steam",
         "viewAllWallpapers": "All my wallpapers on the Wallpaper Engine Workshop",
@@ -212,8 +211,29 @@
             "cs2Christmas": {
                 "title": "Christmas map for CS2",
                 "desc": "Custom Christmas-themed map with its own game mode for matches with friends, built in Source 2."
+            },
+            "mando": {
+                "title": "Joint Command · Kemet Sector",
+                "desc": "Tactical command center with a live world map, radar, radio intercepts, zone weather and DEFCON level."
+            },
+            "reloj": {
+                "title": "Arcane Clock",
+                "desc": "Rune-covered magic circle with an audio visualizer that reacts to your music, plus the time and date at its core."
+            },
+            "grimorio": {
+                "title": "The Scribe's Grimoire",
+                "desc": "Alchemist's desk with a rune book, potions, a compass and animated candles."
+            },
+            "brote": {
+                "title": "Global Outbreak Tracker",
+                "desc": "Crisis terminal with a world map, real-time infection hotspots and news broadcasts."
+            },
+            "nexus": {
+                "title": "Nexus Labs · Subject Monitoring",
+                "desc": "Lab dashboard with live biometric scans, neural analysis and genomic sequencing."
             }
-        }
+        },
+        "viewOnSteam": "View on Steam"
     },
     "Support": {
         "title": "Enjoying my work?",

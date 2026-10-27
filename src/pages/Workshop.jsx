@@ -78,7 +78,7 @@ const Workshop = () => {
                             >
                                 <div className="template-preview workshop-preview">
                                     {item.preview
-                                        ? <img src={item.preview} alt={title} loading="lazy" />
+                                        ? <img src={item.preview} alt={title} loading="lazy" decoding="async" width="960" height="540" />
                                         : <div className="template-preview-placeholder">{placeholderIcon}</div>
                                     }
                                     {isWip && (
@@ -102,7 +102,7 @@ const Workshop = () => {
                                                 rel="noopener noreferrer"
                                                 className="btn btn-primary template-buy-btn"
                                             >
-                                                <i className="fab fa-steam"></i> {t('Workshop.subscribe')}
+                                                <i className="fab fa-steam"></i> {t('Workshop.viewOnSteam')}
                                             </a>
                                         </div>
                                     )}
