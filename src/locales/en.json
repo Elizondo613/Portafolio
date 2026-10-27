@@ -93,7 +93,7 @@
     "About": {
         "about": "About me",
         "technology": "Technologies",
-        "description": "Game and full-stack developer with 4+ years of experience and founder of Kemet Studio. I build web games, content for the Steam community (my Wallpaper Engine backgrounds have passed 80 organic subscriptions) and custom software for real clients. I complement development with offensive security training, including Cisco's Ethical Hacker certification and CTF competitions, to build products that are both functional and secure.",
+        "description": "Game and full-stack developer with 5 years of experience and founder of Kemet Studio. I build web games, content for the Steam community (Wallpaper Engine backgrounds with an active, growing subscriber base) and custom software for real clients. I complement development with offensive security training, including Cisco's Ethical Hacker certification and CTF competitions, to build products that are both functional and secure.",
         "stats": {
             "years": "Years of experience",
             "projects": "Projects",
@@ -130,7 +130,7 @@
             "kemet": {
                 "role": "Founder & Game Developer",
                 "period": "2022 – Present",
-                "desc": "Design, development and publishing of original web games (roguelike, multiplayer chess, arcade and simulation). Content creation for Steam Workshop: wallpapers with 80+ organic subscriptions and custom maps for Counter-Strike 2."
+                "desc": "Design, development and publishing of original web games (roguelike, multiplayer chess, arcade and simulation). Content creation for Steam Workshop: Wallpaper Engine backgrounds with an active community and custom maps for Counter-Strike 2."
             }
         },
         "education": {
@@ -214,5 +214,10 @@
                 "desc": "Custom Christmas-themed map with its own game mode for matches with friends, built in Source 2."
             }
         }
+    },
+    "Support": {
+        "title": "Enjoying my work?",
+        "desc": "If my wallpapers, maps or games were useful to you, you can buy me a coffee on Ko-fi. Every bit helps me keep making free content for the community.",
+        "button": "Support me on Ko-fi"
     }
 }

@@ -159,7 +159,7 @@ const About = () => {
                     </div>
                     <div className="about-stats">
                         <div className="stat-card">
-                            <span className="stat-number">4+</span>
+                            <span className="stat-number">5+</span>
                             <span className="stat-label">{t('About.stats.years')}</span>
                         </div>
                         <div className="stat-card">

@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import '../styles/Templates.css';
 import '../styles/Workshop.css';
+import SupportBanner from '../components/SupportBanner';
 import {
     wallpapers,
     mods,
@@ -124,6 +125,8 @@ const Workshop = () => {
                         <span className="workshop-cta-arrow">→</span>
                     </a>
                 </div>
+
+                <SupportBanner />
             </div>
         </section>
     );

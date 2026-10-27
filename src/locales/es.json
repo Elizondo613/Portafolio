@@ -93,7 +93,7 @@
     "About": {
         "about": "Sobre mí",
         "technology": "Tecnologías",
-        "description": "Desarrollador de videojuegos y full-stack con más de 4 años de experiencia, fundador de Kemet Studio. Creo juegos para web, contenido para la comunidad de Steam (mis fondos de pantalla para Wallpaper Engine ya suman más de 80 suscripciones orgánicas) y software a medida para clientes reales. Complemento el desarrollo con formación en ciberseguridad ofensiva, incluyendo la certificación Ethical Hacker de Cisco y competencias CTF, para construir productos funcionales y seguros.",
+        "description": "Desarrollador de videojuegos y full-stack con 5 años de experiencia, fundador de Kemet Studio. Creo juegos para web, contenido para la comunidad de Steam (fondos de pantalla para Wallpaper Engine con suscriptores activos y en crecimiento) y software a medida para clientes reales. Complemento el desarrollo con formación en ciberseguridad ofensiva, incluyendo la certificación Ethical Hacker de Cisco y competencias CTF, para construir productos funcionales y seguros.",
         "stats": {
             "years": "Años de experiencia",
             "projects": "Proyectos",
@@ -130,7 +130,7 @@
             "kemet": {
                 "role": "Fundador y Desarrollador de Videojuegos",
                 "period": "2022 – Presente",
-                "desc": "Diseño, desarrollo y publicación de videojuegos web propios (roguelike, ajedrez multijugador, arcade y simulación). Creación de contenido para Steam Workshop: fondos de pantalla con más de 80 suscripciones orgánicas y mapas personalizados para Counter-Strike 2."
+                "desc": "Diseño, desarrollo y publicación de videojuegos web propios (roguelike, ajedrez multijugador, arcade y simulación). Creación de contenido para Steam Workshop: fondos de pantalla para Wallpaper Engine con una comunidad activa y mapas personalizados para Counter-Strike 2."
             }
         },
         "education": {
@@ -214,5 +214,10 @@
                 "desc": "Mapa personalizado con temática navideña y un modo de juego propio para partidas entre amigos, construido en Source 2."
             }
         }
+    },
+    "Support": {
+        "title": "¿Te gusta lo que hago?",
+        "desc": "Si mis fondos, mapas o juegos te sirvieron, puedes invitarme un café en Ko-fi. Cada aporte me ayuda a seguir creando contenido gratis para la comunidad.",
+        "button": "Apóyame en Ko-fi"
     }
 }

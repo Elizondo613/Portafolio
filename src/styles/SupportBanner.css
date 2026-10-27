@@ -1,0 +1,48 @@
+.support-banner {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    max-width: 1100px;
+    margin: 3.5rem auto 0;
+    padding: 1.5rem 1.75rem;
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(74, 58, 255, 0.12), rgba(123, 110, 246, 0.05));
+    border: 1px solid rgba(123, 110, 246, 0.3);
+}
+
+.support-banner-icon {
+    font-size: 2.25rem;
+    flex-shrink: 0;
+}
+
+.support-banner-text {
+    flex: 1;
+}
+
+.support-banner-text h3 {
+    margin: 0 0 0.25rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.support-banner-text p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+.support-banner-btn {
+    flex-shrink: 0;
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .support-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+}
