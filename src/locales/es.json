@@ -203,7 +203,6 @@
             "wallpapers": "Wallpapers",
             "mods": "Mapas y Mods"
         },
-        "subscribe": "Suscribirse",
         "wip": "En desarrollo",
         "viewAll": "Ver todo en Steam",
         "viewAllWallpapers": "Todos mis fondos de pantalla en el Workshop de Wallpaper Engine",
@@ -212,8 +211,29 @@
             "cs2Christmas": {
                 "title": "Mapa navideño para CS2",
                 "desc": "Mapa personalizado con temática navideña y un modo de juego propio para partidas entre amigos, construido en Source 2."
+            },
+            "mando": {
+                "title": "Mando Conjunto · Sector Kemet",
+                "desc": "Centro de mando táctico con mapa global en vivo, radar, intercepciones de radio, clima por zonas y nivel DEFCON."
+            },
+            "reloj": {
+                "title": "Reloj Arcano",
+                "desc": "Círculo mágico con runas y visualizador de audio que reacciona a tu música, con la hora y la fecha al centro."
+            },
+            "grimorio": {
+                "title": "Grimorio del Escriba",
+                "desc": "Escritorio de alquimista con un libro de runas, pociones, brújula y velas animadas."
+            },
+            "brote": {
+                "title": "Rastreador de Brote Global",
+                "desc": "Terminal de crisis con mapa mundial, focos de infección en tiempo real y transmisiones de noticias."
+            },
+            "nexus": {
+                "title": "Nexus Labs · Monitoreo de Sujetos",
+                "desc": "Panel de laboratorio con escaneo biométrico, análisis neural y secuencia genómica en vivo."
             }
-        }
+        },
+        "viewOnSteam": "Ver en Steam"
     },
     "Support": {
         "title": "¿Te gusta lo que hago?",
