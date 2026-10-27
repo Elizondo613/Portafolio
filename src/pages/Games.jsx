@@ -53,15 +53,17 @@ const GameRow = ({ game, index }) => {
                         src={game.images[currentImage]}
                         alt={`${game.title} - ${currentImage + 1}`}
                         className="game-row-img"
+                        loading="lazy"
+                        decoding="async"
                     />
 
                     {game.images.length > 1 && (
                         <>
                             <div className="game-row-controls">
-                                <button onClick={prevImage} className="game-row-nav">
+                                <button onClick={prevImage} className="game-row-nav" aria-label="Anterior">
                                     <ChevronLeft />
                                 </button>
-                                <button onClick={nextImage} className="game-row-nav">
+                                <button onClick={nextImage} className="game-row-nav" aria-label="Siguiente">
                                     <ChevronRight />
                                 </button>
                             </div>

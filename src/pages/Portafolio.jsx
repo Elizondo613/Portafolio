@@ -47,15 +47,17 @@ const ProjectRow = ({ project, index }) => {
                         src={project.images[currentImage]}
                         alt={`${project.title} - ${currentImage + 1}`}
                         className="project-row-img"
+                        loading="lazy"
+                        decoding="async"
                     />
 
                     {project.images.length > 1 && (
                         <>
                             <div className="project-row-controls">
-                                <button onClick={prevImage} className="project-row-nav">
+                                <button onClick={prevImage} className="project-row-nav" aria-label="Anterior">
                                     <ChevronLeft />
                                 </button>
-                                <button onClick={nextImage} className="project-row-nav">
+                                <button onClick={nextImage} className="project-row-nav" aria-label="Siguiente">
                                     <ChevronRight />
                                 </button>
                             </div>

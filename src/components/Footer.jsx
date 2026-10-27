@@ -23,7 +23,7 @@ const Footer = () => {
                 <div className="container footer-content">
                     <div className="footer-info">
                         <Link to="/" className="logo-link">
-                            <img src={Logo} alt="Logo portafolio" className="logo-image-footer" />
+                            <img src={Logo} alt="Kemet Studio" className="logo-image-footer" />
                         </Link>
                         <p>{t('Footer.slogan')}</p>
                     </div>
@@ -41,22 +41,22 @@ const Footer = () => {
                     <div className="footer-social">
                         <p>{t('Footer.follow')}</p>
                         <div className="social-links">
-                            <a href="https://github.com/Elizondo613" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/Elizondo613" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                                 <i className="fab fa-github"></i>
                             </a>
-                            <a href="https://www.instagram.com/javi_elizondo_613/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.instagram.com/javi_elizondo_613/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                                 <i className="fab fa-instagram"></i>
                             </a>
-                            <a href="https://steamcommunity.com/profiles/76561198410903687/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://steamcommunity.com/profiles/76561198410903687/" target="_blank" rel="noopener noreferrer" aria-label="Steam">
                                 <i className="fab fa-steam"></i>
                             </a>
-                            <a href="https://discord.gg/vEHUF2ZkUn" target="_blank" rel="noopener noreferrer">
+                            <a href="https://discord.gg/vEHUF2ZkUn" target="_blank" rel="noopener noreferrer" aria-label="Discord">
                                 <i className="fab fa-discord"></i>
                             </a>
-                            <a href="https://www.linkedin.com/in/jose-javier-elizondo-mendoza-063783331" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.linkedin.com/in/jose-javier-elizondo-mendoza-063783331" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                                 <i className="fab fa-linkedin"></i>
                             </a>
-                            <a href="https://www.youtube.com/channel/UCGaMiA00t_fUEQvE-D8cozA" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.youtube.com/channel/UCGaMiA00t_fUEQvE-D8cozA" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
                                 <i className="fab fa-youtube"></i>
                             </a>
                             {KOFI_URL && (
@@ -75,6 +75,7 @@ const Footer = () => {
             <a
                 href="https://wa.me/+50258119510?text=Hola%20Javi!%20Vi%20tu%20página%20y%20me%20interesa%20tu%20trabajo."
                 className="whatsapp-button"
+                aria-label="WhatsApp"
                 target="_blank"
                 rel="noopener noreferrer"
             >
@@ -84,6 +85,7 @@ const Footer = () => {
             <button
                 className={`scroll-top-button ${showScrollTop ? 'visible' : ''}`}
                 onClick={scrollToTop}
+                aria-label="Volver arriba"
             >
                 <i className="fas fa-arrow-up"></i>
             </button>
