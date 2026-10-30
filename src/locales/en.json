@@ -231,6 +231,14 @@
             "nexus": {
                 "title": "Nexus Labs · Subject Monitoring",
                 "desc": "Lab dashboard with live biometric scans, neural analysis and genomic sequencing."
+            },
+            "radio": {
+                "title": "R-17 Transceiver · Shelter 7",
+                "desc": "Field radio in a post-apocalyptic shelter: survivor broadcasts, a supply log and a nixie-tube clock."
+            },
+            "orbita": {
+                "title": "Live ISS Orbit",
+                "desc": "View from the International Space Station with its real position, orbital track, moon phase and fun facts."
             }
         },
         "viewOnSteam": "View on Steam"
@@ -238,7 +246,11 @@
     "Support": {
         "title": "Enjoying my work?",
         "desc": "If my wallpapers, maps or games were useful to you, you can buy me a coffee on Ko-fi. Every bit helps me keep making free content for the community.",
-        "button": "Support me on Ko-fi"
+        "button": "Support me on Ko-fi",
+        "games": {
+            "title": "Had fun playing?",
+            "desc": "My games are free. If you want to help more (and bigger) ones come out, you can buy me a coffee on Ko-fi."
+        }
     },
     "Seo": {
         "pages": {

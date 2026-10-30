@@ -9,6 +9,8 @@ import nexus from '../assets/workshop/nexus-labs.webp';
 import mando from '../assets/workshop/mando-conjunto.webp';
 import grimorio from '../assets/workshop/grimorio-escriba.webp';
 import reloj from '../assets/workshop/reloj-arcano.webp';
+import radio from '../assets/workshop/transceptor-r17.webp';
+import orbita from '../assets/workshop/orbita-iss.webp';
 
 export const STEAM_PROFILE = 'https://steamcommunity.com/profiles/76561198410903687';
 
@@ -31,6 +33,8 @@ export const TOTAL_SUBSCRIBERS = '80+';
 // Todos enlazan a la página principal de tus wallpapers en el Workshop.
 // Si luego quieres que uno abra su propia página, cambia su `link`.
 export const wallpapers = [
+    { id: 'transceptor-r17',  key: 'radio',    preview: radio,    link: WORKSHOP_WALLPAPERS_URL, tags: ['Postapocalíptico', 'Retro', 'Reloj'] },
+    { id: 'orbita-iss',       key: 'orbita',   preview: orbita,   link: WORKSHOP_WALLPAPERS_URL, tags: ['Espacio', 'En vivo', 'Reloj'] },
     { id: 'mando-conjunto',   key: 'mando',    preview: mando,    link: WORKSHOP_WALLPAPERS_URL, tags: ['Sci-Fi', 'HUD', 'Animado'] },
     { id: 'reloj-arcano',     key: 'reloj',    preview: reloj,    link: WORKSHOP_WALLPAPERS_URL, tags: ['Fantasía', 'Reloj', 'Audio'] },
     { id: 'grimorio-escriba', key: 'grimorio', preview: grimorio, link: WORKSHOP_WALLPAPERS_URL, tags: ['Fantasía', 'Medieval', 'Animado'] },
