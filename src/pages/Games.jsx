@@ -3,6 +3,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import '../styles/Games.css';
 import PropTypes from 'prop-types';
+import SupportBanner from '../components/SupportBanner';
 
 import img1 from '../assets/Memory.jpg';
 import img2 from '../assets/Memory2.jpg';
@@ -208,6 +209,8 @@ const GamesShowcase = () => {
                         <GameRow key={game.title} game={game} index={index} />
                     ))}
                 </div>
+
+                <SupportBanner variant="games" />
             </div>
         </section>
     );

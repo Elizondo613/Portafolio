@@ -231,6 +231,14 @@
             "nexus": {
                 "title": "Nexus Labs · Monitoreo de Sujetos",
                 "desc": "Panel de laboratorio con escaneo biométrico, análisis neural y secuencia genómica en vivo."
+            },
+            "radio": {
+                "title": "Transceptor R-17 · Refugio 7",
+                "desc": "Radio de campo en un refugio postapocalíptico: transmisiones de sobrevivientes, bitácora de suministros y reloj nixie."
+            },
+            "orbita": {
+                "title": "Órbita ISS en vivo",
+                "desc": "Vista desde la Estación Espacial Internacional con su posición real, traza orbital, fase lunar y datos curiosos."
             }
         },
         "viewOnSteam": "Ver en Steam"
@@ -238,7 +246,11 @@
     "Support": {
         "title": "¿Te gusta lo que hago?",
         "desc": "Si mis fondos, mapas o juegos te sirvieron, puedes invitarme un café en Ko-fi. Cada aporte me ayuda a seguir creando contenido gratis para la comunidad.",
-        "button": "Apóyame en Ko-fi"
+        "button": "Apóyame en Ko-fi",
+        "games": {
+            "title": "¿Te divertiste jugando?",
+            "desc": "Mis juegos son gratis. Si quieres apoyar para que salgan más (y más grandes), puedes invitarme un café en Ko-fi."
+        }
     },
     "Seo": {
         "pages": {
